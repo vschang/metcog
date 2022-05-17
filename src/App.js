@@ -1,14 +1,16 @@
-import logo from './logo.svg';
+import greenCircle from './images/green-circle.png';
 import './App.css';
+import Nav from './nav.jsx';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Nav />
+        <img src={greenCircle} className="App-logo" alt="logo" />
+        <h1>
+          Find balance at work
+        </h1>
         <a
           className="App-link"
           href="https://reactjs.org"
