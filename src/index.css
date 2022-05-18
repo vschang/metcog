@@ -4,6 +4,18 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
+
+@font-face {
+  font-family:'Futura-Medium';
+  src: local('Futura-Medium'),
+  url(./fonts/futura-medium-bt.ttf) format('truetype');
+
+  font-family:'Futura-Light';
+  src: local('Futura-Light'),
+  url(./fonts/futura-light-bt.ttf) format('truetype');
+}
+
+
 html{
   font-size: 16px;
 }
@@ -17,6 +29,11 @@ code {
 
 h1{
   font-size: 3.062rem;
+}
+
+h2{
+  font-family:'Futura-Light';
+  font-size: 1.938rem;
 }
 
 p{

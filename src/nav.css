@@ -5,6 +5,7 @@ h2{
 
 p{
   font-size: 1rem;
+  font-family: 'Lato', sans-serif;
   color: white;
 }
 
@@ -12,4 +13,18 @@ p{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  align-items:center;
+
+}
+
+.nav-links{
+  display:flex;
+  padding-right: 100px;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.pad-left{
+  padding-left: 100px;
 }
