@@ -8,7 +8,9 @@ function App() {
 
         <h2 className="Logo">MetCog</h2>
         <p className="Why-breathe">Why breathe?</p>
-        <p className="Shuffle">🔀</p>
+        {/* <p className="Shuffle">🔀</p> */}
+        <i class="fa-solid fa-shuffle fa-lg Shuffle"></i>
+        <i class="fa-solid fa-sliders fa-lg Adjust"></i>
         <div className="Call-action">
           <h1>
             Find <em>balance</em> at work
