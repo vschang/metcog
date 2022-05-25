@@ -1,0 +1,76 @@
+
+.About{
+  display:flex;
+  justify-content: space-between;
+}
+
+.Purple-square{
+  padding-top: 215px;
+  width: 710px;
+  height: 605px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end:5;
+  margin: 0 calc((1072px - 100vw)/2);
+}
+
+.Health-benefits{
+  padding-top: 215px;
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  align-self: center;
+}
+
+.list-p{
+  margin-top: 5px;
+  padding-bottom: 18px;
+}
+
+h3{
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  color: white;
+  font-size: 1.563rem;
+}
+
+ul {
+  padding-inline-start: 10px;
+}
+
+li{
+  color: white;
+  font-size: 1.25rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+::marker{
+  color:#cd44e8;
+  font-size: .75rem;
+}
+
+p{
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 300;
+}
+
+a{
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 300;
+  text-decoration:none;
+}
+
+a:hover{
+  color: #E18A35;
+}
+
+#Benefits-text{
+  overflow-y: scroll;
+}
