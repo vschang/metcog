@@ -1,55 +1,76 @@
-import React from "react";
-import './Home.css'
+import React, { useState, useEffect } from 'react';import './Home.css'
+import Button from './Button.js'
+import Exercise from './Exercise.jsx'
+import TwoBreath from './images/2x-breath.gif'
+import ThreeSix from './images/3-6-breathing.gif'
+import FourSeven from './images/4-7-8-breathing.gif'
+import FiveFive from './images/5-5x5-5-breathing.gif'
+import BoxBreath from './images/box-breath.gif'
 
 function Home() {
+
+  const exerciseArray = [
+    {id: 1, imgUrl: TwoBreath, alt:'2x breathing exercise' },
+    {id: 2, imgUrl: ThreeSix, alt:'3 6 breathing exercise' },
+    {id: 3, imgUrl: FourSeven, alt:'4 7 8 breathing exercise' },
+    {id: 4, imgUrl: FiveFive, alt:'5-5 x 5-5 breathing exercise' },
+    {id: 5, imgUrl: BoxBreath, alt:'Box breath breathing exercise' },
+  ]
+  const [index, setIndex] = useState(0) //first exercise as default
+
+  const [showGif, setShowGif] = useState(false)
+  const displayExercise = () => setShowGif(true)
+
+  const [showHero, setShowHero] = useState(true)
+  const displayHero = () => setShowHero(false)
+
+  function changeExercise(){
+    let newIndex = Math.floor(Math.random()*5)
+    setIndex(newIndex)
+  }
+
+  useEffect(()=>{
+    const getSeconds = () => {
+      let seconds;
+      if ( index === 0 ){
+          seconds = 103980
+        } else if (index === 1 ){
+          seconds = 92840
+        } else if (index === 2 ){
+          seconds = 121860
+        } else if (index === 3 ){
+          seconds = 92380
+        } else if (index === 4 ){
+          seconds = 116750
+        }
+        return seconds
+    }
+    setTimeout(() => { setShowGif(false); setShowHero(true) }, getSeconds())
+  })
+
   return (
     <div className="Wrapper">
-        {/* <h2 className="Logo">MetCog</h2>
-        <a href="#Benefits-text" className="Why-breathe">Why breathe?</a>
-        <i className="fa-solid fa-shuffle fa-lg Shuffle"></i>
-        <i className="fa-solid fa-sliders fa-lg Adjust"></i> */}
-
-        <div className="Call-action">
-          <h1>
-            Find <em>balance</em> at work
-          </h1>
-          <p className="big-p">Give your brain a rest. Sneak a randomized 1-3 minute breathing exercise between tasks. <em>More time?</em> <br></br> Adjust your preferences as well.</p>
+      {showHero ?
+        <div className="Wrapper">
+          <div className="Call-action">
+            <h1>
+              Find <em>balance</em> at work
+            </h1>
+            <p className="big-p">Give your brain a rest. Sneak a randomized 1-3 minute breathing exercise between tasks. <em>More time?</em> <br></br> Adjust your preferences as well.</p>
+          </div>
+          <div className='Color-circle' id="rainbow-circle"></div>
+          <button onClick={() => {changeExercise(); displayExercise(); displayHero()}} className="Random-button" >Randomize</button>
+          {/* <button className="Adjust-button">Adjust</button> */}
         </div>
-        <div className='Color-circle' id="rainbow-circle"></div>
-        <button className="Random-button">Randomize</button>
-        <button className="Adjust-button">Adjust</button>
+      : null}
 
-        {/* <img src={purpleSquare} className="Purple-square" alt="purple square" />
-        <div className="Health-benefits">
-          <h3>Health Benefits of Breathing</h3>
-          <ul>
-            <li>Reduce Anxiety
-              <p className="list-p">Calm your mind and body with a few breaths.</p>
-            </li>
-            <li>Improve Overall Health
-              <p className="list-p" id="Benefits-text">Improve circulation, lung capacity and boost your immune system</p>
-            </li>
-            <li>Better Stress Perception
-              <p className="list-p">Breathing lowers your resting heart rate and is correlated with less anxiety and stress.</p>
-            </li>
-          </ul>
-        </div> */}
 
-        {/* <div className="Logo-footer">
-          <h2 className="mt-0">MetCog</h2>
-          <p className="Small-p">Mindfulness at work</p>
-        </div>
-        <div className="Resources-footer">
-          <p className="mt-0"><strong>Resources</strong></p>
-          <p>Why breathe?</p>
-          <p>Randomize</p>
-        </div>
-        <div className="Contact-footer">
-          <p className="mt-0"><strong>Contact</strong></p>
-          <p>What to help us improve?</p>
-          <p className="mb-0">Email us at:</p>
-          <a href="mailto:richardgrinerdesigns@gmail.com?subject=Metcog Inquiry">richardgrinerdesigns@gmail.com</a>
-        </div> */}
+        {showGif ?
+          <div className="Exercise-gif">
+            <img src={exerciseArray[index].imgUrl} className='Exercise-gif' alt={exerciseArray[index].alt} />
+          </div>
+        : null }
+
       </div>
   )
 }

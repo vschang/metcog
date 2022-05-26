@@ -2,19 +2,21 @@
 .Footer{
   display: flex;
   justify-content: space-around;
+  padding-top: 60px;
+  padding-bottom: 55px;
 }
 
 .Logo-footer{
-  grid-column-start: 1;
+  /* grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 5;
-  grid-row-end:6;
+  grid-row-end:6; */
   /* padding-top: 30px;
   padding-bottom: 45px; */
   display: flex;
   flex-direction: column;
   justify-self: center;
-  padding-top: 20px;
+  align-self: center;
 }
 
 .Small-p{
@@ -24,28 +26,23 @@
 }
 
 .Resources-footer{
-  grid-column-start: 4;
+  /* grid-column-start: 4;
   grid-column-end: 5;
-  grid-row-start: 5;
-  /* padding-top: 30px;
-  padding-bottom: 45px; */
+  grid-row-start: 5; */
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  align-self: center;
+
 }
 
 .Contact-footer{
-  grid-column-start: 7;
+  /* grid-column-start: 7;
   grid-column-end: 9;
   grid-row-start: 5;
-  grid-row-end:6;
-  /* padding-top: 30px;
-  padding-bottom: 45px; */
+  grid-row-end:6; */
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  align-self: end;
 }
 
 .mb-0{
@@ -54,4 +51,21 @@
 
 .mt-0{
   margin-top: 0px;
+}
+
+.light-grey{
+  color: #7A7A7A;
+}
+
+.big-p{
+  font-size: 25px;
+}
+
+.flex{
+  display: flex;
+  align-items:center;
+}
+
+.link{
+  color: #E18A35;
 }

@@ -9,15 +9,19 @@ function Footer() {
           <p className="Small-p">Mindfulness at work</p>
       </div>
       <div className="Resources-footer">
-        <p className="mt-0"><strong>Resources</strong></p>
-        <p>Why breathe?</p>
-        <p>Randomize</p>
+        <p className="mt-0"><strong>Why breathe?</strong></p>
+        <p className="light-grey">About us</p>
+        <p className="light-grey">Design</p>
+        <p className="light-grey">Member area</p>
       </div>
       <div className="Contact-footer">
-        <p className="mt-0"><strong>Contact</strong></p>
-        <p>What to help us improve?</p>
-        <p className="mb-0">Email us at:</p>
+        <p className="mt-0 big-p">Contact</p>
         <a href="mailto:richardgrinerdesigns@gmail.com?subject=Metcog Inquiry">richardgrinerdesigns@gmail.com</a>
+        <p className="mb-0">What to help us improve?</p>
+        <div className="flex">
+          <p>Click</p>
+          <a href="mailto:richardgrinerdesigns@gmail.com?subject=Metcog Inquiry" class="link">here</a>
+        </div>
       </div>
     </div>
   );
