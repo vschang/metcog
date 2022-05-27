@@ -10,10 +10,12 @@ function Navbar() {
       </div>
       <div className="Nav-items">
         <a href="#Benefits-text" className="Why-breathe">Why breathe?</a>
-        <i className="fa-solid fa-shuffle fa-lg Shuffle"></i>
-        <NavLink className="" to="/adjust">
+        <button className="Shuffle-button">
+          <i className="fa-solid fa-shuffle fa-lg Shuffle"></i>
+        </button>
+        {/* <NavLink className="" to="/adjust">
           <i className="fa-solid fa-sliders fa-lg Adjust"></i>
-        </NavLink>
+        </NavLink> */}
       </div>
 
     </div>

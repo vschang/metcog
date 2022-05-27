@@ -1,7 +1,7 @@
 .Nav-Bar{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 25px;
 }
 
@@ -42,6 +42,10 @@ a:hover{
   margin-left: 10px;
 }
 
+.Why-breathe:hover{
+  color: #E18A35;
+}
+
 .Shuffle{
   grid-column-start: 8;
   grid-column-end:9;
@@ -52,6 +56,19 @@ a:hover{
   margin-top: 25px;
   padding-left: 15px;
   color: white;
+}
+
+.Shuffle:hover{
+  color: #E18A35;
+}
+
+.Shuffle-button{
+  background: none;
+  border: none;
+}
+
+.Shuffle-button:hover{
+  color: #E18A35;
 }
 
 .Adjust{

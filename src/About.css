@@ -2,10 +2,10 @@
 .About{
   display:flex;
   justify-content: space-between;
+  padding-top: 235px;
 }
 
 .Purple-square{
-  padding-top: 215px;
   width: 710px;
   height: 605px;
   grid-column-start: 1;
@@ -16,7 +16,7 @@
 }
 
 .Health-benefits{
-  padding-top: 215px;
+  width: 35%;
   grid-column-start: 6;
   grid-column-end: 9;
   grid-row-start: 4;

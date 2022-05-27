@@ -8,8 +8,6 @@ import Navbar from './Navbar.jsx'
 
 function App() {
 
-
-
   return (
     <div className="App">
       <div className="Header-footer-wrapper">

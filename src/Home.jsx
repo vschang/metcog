@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';import './Home.css'
-import Button from './Button.js'
-import Exercise from './Exercise.jsx'
+import React, { useState, useEffect } from 'react';
+import './Home.css'
 import TwoBreath from './images/2x-breath.gif'
 import ThreeSix from './images/3-6-breathing.gif'
 import FourSeven from './images/4-7-8-breathing.gif'
@@ -24,6 +23,10 @@ function Home() {
   const [showHero, setShowHero] = useState(true)
   const displayHero = () => setShowHero(false)
 
+  const [showSecondHero, setShowSecondHero] = useState(false)
+  const displaySecondHero = () => setShowSecondHero(!showSecondHero)
+
+
   function changeExercise(){
     let newIndex = Math.floor(Math.random()*5)
     setIndex(newIndex)
@@ -45,7 +48,7 @@ function Home() {
         }
         return seconds
     }
-    setTimeout(() => { setShowGif(false); setShowHero(true) }, getSeconds())
+    setTimeout(() => { setShowGif(false); setShowSecondHero(true) }, getSeconds())
   })
 
   return (
@@ -63,6 +66,14 @@ function Home() {
           {/* <button className="Adjust-button">Adjust</button> */}
         </div>
       : null}
+
+        {showSecondHero ?
+        <div className="Secondary-hero">
+          <div className='Secondary-color-circle' id="rainbow-circle"></div>
+          <button onClick={() => {changeExercise(); displayExercise(); displaySecondHero()}} className="Secondary-random-button" >Randomize</button>
+          {/* <button className="Adjust-button">Adjust</button> */}
+        </div>
+        : null }
 
 
         {showGif ?

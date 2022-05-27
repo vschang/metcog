@@ -19,7 +19,7 @@ function Footer() {
         <a href="mailto:richardgrinerdesigns@gmail.com?subject=Metcog Inquiry">richardgrinerdesigns@gmail.com</a>
         <p className="mb-0">What to help us improve?</p>
         <div className="flex">
-          <p>Click</p>
+          <p className="pr-5">Click</p>
           <a href="mailto:richardgrinerdesigns@gmail.com?subject=Metcog Inquiry" class="link">here</a>
         </div>
       </div>

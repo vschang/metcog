@@ -1,9 +1,9 @@
 
 .Footer{
   display: flex;
-  justify-content: space-around;
-  padding-top: 60px;
-  padding-bottom: 55px;
+  justify-content: space-between;
+  padding-top: 70px;
+  padding-bottom: 60px;
 }
 
 .Logo-footer{
@@ -23,6 +23,7 @@
   font-size: 0.8125rem;
   margin-top: 50px;
   font-weight: 300;
+  margin-top: 100px;
 }
 
 .Resources-footer{
@@ -64,8 +65,13 @@
 .flex{
   display: flex;
   align-items:center;
+  margin-top: -16px;
 }
 
 .link{
   color: #E18A35;
+}
+
+.pr-5{
+  padding-right:5px;
 }
