@@ -52,7 +52,7 @@ function Home() {
   })
 
   return (
-    <div className="Wrapper">
+    <div className="Full-height">
       {showHero ?
         <div className="Wrapper">
           <div className="Call-action">
@@ -68,11 +68,13 @@ function Home() {
       : null}
 
         {showSecondHero ?
-        <div className="Secondary-hero">
-          <div className='Secondary-color-circle' id="rainbow-circle"></div>
-          <button onClick={() => {changeExercise(); displayExercise(); displaySecondHero()}} className="Secondary-random-button" >Randomize</button>
-          {/* <button className="Adjust-button">Adjust</button> */}
-        </div>
+
+          <div className="Secondary-hero Wrapper">
+            <div className='Secondary-color-circle' id="rainbow-circle"></div>
+            <button onClick={() => {changeExercise(); displayExercise(); displaySecondHero()}} className="Secondary-random-button" >Randomize</button>
+            {/* <button className="Adjust-button">Adjust</button> */}
+          </div>
+
         : null }
 
 
