@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .Header-footer-wrapper{
     width: 80%;
   }
@@ -65,7 +65,76 @@
     margin: 0px;
   }
 }
-@media (min-width: 769px) {
+
+@media (min-width: 769px) and (max-width: 1249px) {
+  .Header-footer-wrapper{
+    width: 80%;
+  }
+  .App {
+    /* text-align: center; */
+    background-color: #232323;
+    min-height: 100vh;
+    min-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    flex-direction: column;
+  }
+
+  h2{
+    color: white;
+    font-size: 1.938rem;
+  }
+
+  h3{
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1.563rem;
+  }
+
+  p{
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: 300;
+  }
+
+  a{
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: 300;
+    text-decoration:none;
+  }
+
+  a:hover{
+    color: #E18A35;
+  }
+
+  #Benefits-text{
+    overflow-y: scroll;
+  }
+
+
+  .big-p{
+    font-size: 1.25rem;
+  }
+
+
+  h1{
+    font-size: 3.062rem;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    color: white;
+    margin: 0px;
+  }
+}
+
+@media (min-width: 1250px) {
   .App {
     /* text-align: center; */
     background-color: #232323;

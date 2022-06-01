@@ -48,8 +48,10 @@ function Home() {
         }
         return seconds
     }
-    setTimeout(() => { setShowGif(false); setShowSecondHero(true) }, getSeconds())
-  })
+    const timer = setTimeout(() => { setShowGif(false); setShowSecondHero(true) }, getSeconds())
+    return () => {clearTimeout(timer)};
+
+  }, []);
 
   return (
     <div className="Full-height">
@@ -59,7 +61,9 @@ function Home() {
             <h1>
               Find <em>balance</em> at work
             </h1>
-            <p className="big-p">Give your brain a rest. Sneak a randomized 1-3 minute breathing exercise between tasks. <em>More time?</em> <br></br> Adjust your preferences as well.</p>
+            <p className="big-p">Give your brain a rest. Sneak a randomized 1-3 minute breathing exercise between tasks.
+            {/* <em>More time?</em> <br></br> Adjust your preferences as well. */}
+            </p>
           </div>
           <div className='Color-circle' id="rainbow-circle"></div>
           <button onClick={() => {changeExercise(); displayExercise(); displayHero()}} className="Random-button" >Randomize</button>

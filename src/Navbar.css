@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .Nav-Bar{
     display: flex;
     justify-content: center;
@@ -29,8 +29,8 @@
   }
   .Why-breathe{
     justify-self: center;
-    margin-top: 25px;
     margin-left: 10px;
+    margin-top: 5px;
   }
 
   .Why-breathe:hover{
@@ -70,12 +70,30 @@
   }
 
   .Nav-items{
-    /* display: flex;
-    width: 25%;
+    display: flex;
+    width: 0%;
     justify-content: space-between;
-    align-items: center; */
-    display: none;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+
   }
+
+  .Show-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 12vh;
+    right: 0;
+    bottom: 0;
+
+    background:#cd44e8;
+
+  }
+
 
   .Adjust{
     margin-top: 30px;
@@ -100,6 +118,15 @@
     border:none;
   }
 
+  .X-button{
+    color: white;
+    background: none;
+    border: none;
+    position: fixed;
+    top: 8px;
+    right: 8px;
+  }
+
   .Logo-div{
     width: 100%;
     display: flex;
@@ -107,8 +134,7 @@
   }
 }
 
-
-@media (min-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1249px) {
   .Nav-Bar{
     display: flex;
     justify-content: space-between;
@@ -121,6 +147,116 @@
     font-size: 1.938rem;
   }
 
+  a{
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: 300;
+    text-decoration:none;
+  }
+
+  a:hover{
+    color: #E18A35;
+  }
+  .Logo{
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 1;
+    grid-row-end:2;
+    justify-self: center;
+    margin-top: 40px;
+    color: white;
+    font-size: 1.938rem;
+    font-family:'Futura-Light';
+  }
+  .X-button{
+    display: none;
+  }
+
+  .Hamburger-div{
+    display: none;
+  }
+  .Why-breathe{
+    grid-column-start: 7;
+    grid-column-end:8;
+    grid-row-start: 1;
+    grid-row-end:2;
+    justify-self: center;
+    margin-top: 25px;
+    margin-left: 10px;
+  }
+
+  .Why-breathe:hover{
+    color: #E18A35;
+  }
+
+  .Shuffle{
+    grid-column-start: 8;
+    grid-column-end:9;
+    grid-row-start: 1;
+    grid-row-end:2;
+    align-self: center;
+    justify-self: start;
+    margin-top: 25px;
+    padding-left: 15px;
+    color: white;
+  }
+
+  .Shuffle:hover{
+    color: #E18A35;
+  }
+
+  .Shuffle-button{
+    background: none;
+    border: none;
+  }
+
+  .Shuffle-button:hover{
+    color: #E18A35;
+  }
+
+  .Adjust{
+    grid-column-start: 8;
+    grid-column-end:9;
+    grid-row-start: 1;
+    grid-row-end:2;
+    justify-self: end;
+    margin-top: 25px;
+    padding-right: 10px;
+    color: white;
+  }
+
+  .Nav-items{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Adjust{
+    margin-top: 30px;
+  }
+}
+
+
+@media (min-width: 1250px) {
+  .Nav-Bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 25px;
+  }
+
+  h2{
+    color: white;
+    font-size: 1.938rem;
+  }
+  .X-button{
+    display: none;
+  }
+  .Hamburger-div{
+    display: none;
+  }
   a{
     font-size: 1rem;
     font-family: 'Lato', sans-serif;

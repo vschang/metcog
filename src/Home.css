@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
   .Full-height{
     height: 95vh;
@@ -178,7 +178,219 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1199px) {
+  .Full-height{
+    height: 63vh;
+  }
+  h2{
+    color: white;
+    font-size: 1.744rem;
+  }
+
+  h3{
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1.408rem;
+  }
+
+  p{
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: 300;
+  }
+
+  a{
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: 300;
+    text-decoration:none;
+  }
+
+  a:hover{
+    color: #E18A35;
+  }
+
+  #Benefits-text{
+    overflow-y: scroll;
+  }
+
+  .Wrapper {
+    display:grid;
+    grid-template-columns: repeat(8, auto);
+    gap: 16px;
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    padding-bottom: 10px;
+    height: 64vh;
+  }
+
+  .Call-action{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end:3;
+    padding-top: 140px;
+    justify-self: center;
+    margin-top: 35px;
+  }
+
+
+  .big-p{
+    font-size: 1.125rem;
+  }
+
+
+  .Color-circle{
+    height: 180px;
+    width: 360px;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    justify-self: center;
+    padding-top: 180px;
+    margin-top: 180px;
+    background-color: #6DE5BB;
+    border-radius: 360px;
+    display: block;
+  }
+
+
+  .Random-button{
+    color: #6DE5BB;
+    background-color: #232323;
+    border: solid 1px #6DE5BB;
+    width: 192px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end:4;
+    justify-self: start;
+    align-self: end;
+  }
+
+  .Random-button:hover{
+    opacity: 75%;
+  }
+
+  .Adjust-button:hover{
+    opacity: 75%;
+  }
+
+  .Adjust-button{
+    color: white;
+    background-color: #232323;
+    border: solid 1px white;
+    width: 192px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: end;
+    align-self: end;
+    margin-right: -10px;
+  }
+  .Exercise-gif{
+    margin-left: -3vw;
+    width: 90vw;
+  }
+
+
+  .list-p{
+    margin-top: 5px;
+    padding-bottom: 18px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .Color-circle {
+      animation: App-logo-color infinite 10s linear;
+      animation-direction: alternate;
+    }
+    .Secondary-color-circle {
+      animation: App-logo-color infinite 10s linear;
+      animation-direction: alternate;
+    }
+  }
+
+  h1{
+    font-size: 2.76rem;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    color: white;
+    margin: 0px;
+  }
+
+
+  @keyframes App-logo-pulse {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1, 1);
+    }
+  }
+
+  @keyframes App-logo-color {
+    0%   {background-color: #6DE5BB;}
+    30%  {background-color: #CD44E8;}
+    60%  {background-color: #E18A35;}
+    100% {background-color: #6DE5BB;}
+  }
+
+
+  .Secondary-hero{
+    grid-column-start: 4;
+  }
+
+  .Secondary-random-button{
+    color: #6DE5BB;
+    background-color: #232323;
+    border: solid 1px #6DE5BB;
+    width: 192px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    margin-top: 80px;
+    grid-column-start: 4;
+    margin-left: 175px;
+  }
+
+  .Secondary-color-circle{
+    height: 180px;
+    width: 360px;
+    justify-self: center;
+    padding-top: 180px;
+    margin-top: 120px;
+    background-color: #6DE5BB;
+    border-radius: 360px;
+    display: block;
+    margin-left: 80px;
+    grid-column-start: 4;
+  }
+}
+
 @media (min-width: 1200px) {
+  .Full-height{
+    height: 63vh;
+  }
+
   h2{
     color: white;
     font-size: 1.938rem;
