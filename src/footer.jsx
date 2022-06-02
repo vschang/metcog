@@ -20,7 +20,7 @@ function Footer() {
         <p className="mb-0">What to help us improve?</p>
         <div className="flex">
           <p className="pr-5">Click</p>
-          <a href="mailto:richardgrinerdesigns@gmail.com?subject=Metcog Inquiry" class="link">here</a>
+          <a href="mailto:richardgrinerdesigns@gmail.com?subject=Metcog Inquiry" className="link">here</a>
         </div>
       </div>
     </div>

@@ -1,22 +1,28 @@
 import './App.css';
-import Home from './Home.jsx'
-import About from './About.jsx'
-import Footer from './Footer.jsx'
-import Navbar from './Navbar.jsx'
+import HomePage from './pages/Home-page.jsx'
+import AdjustPage from './pages/Adjust-page.jsx'
+import RandomizePage from './pages/Randomize-page.jsx'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 
-
-function App() {
+const App = (props) => {
 
   return (
-    <div className="App">
-      <div className="Header-footer-wrapper">
-        <Navbar />
-        <Home />
-        <About />
-        <Footer />
-      </div>
-    </div>
+    <Router>
+      {/* <div className="App">
+        <div className="Header-footer-wrapper">
+          <Navbar />
+          <Home />
+          <About />
+          <Footer />
+        </div> */}
+        <Routes>
+            <Route exact path='/' element={<HomePage/>} />
+            <Route path='/randomize' element={<RandomizePage/>} />
+            <Route path='/adjust' element={<AdjustPage/>} />
+        </Routes>
+      {/* </div> */}
+    </Router>
   );
 }
 

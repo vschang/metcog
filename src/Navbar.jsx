@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 
 
+
 function Navbar() {
   const [navBarOpen, setNavBarOpen] = useState(false)
-
   const handleToggle = () => {setNavBarOpen(prev => !prev)}
-
   const closeMenu = () => {setNavBarOpen(false)}
 
     return (
@@ -20,13 +19,19 @@ function Navbar() {
         </div>
         <div className={`Nav-items ${navBarOpen ? "Show-menu" : ""}`} >
           <button className="X-button" onClick={handleToggle}>{navBarOpen ? <i className="fa-solid fa-xmark" ></i> : ""}</button>
-          <a href="#Benefits-text" className="Why-breathe" onClick={closeMenu}>Why breathe?</a>
-          <button className="Shuffle-button">
-            <i className="fa-solid fa-shuffle fa-lg Shuffle"></i>
-          </button>
-          {/* <NavLink className="" to="/adjust">
-            <i className="fa-solid fa-sliders fa-lg Adjust"></i>
-          </NavLink> */}
+          {/* <NavLink className="Whybreathe-link" to="/"> */}
+            <a href="#Benefits-text" className="Why-breathe" onClick={closeMenu}>Why breathe?</a>
+          {/* </NavLink> */}
+          <NavLink className="Shuffle-link" to="/randomize">
+            <button className="Shuffle-button Shuf-btn" onClick={handleToggle} >
+              <i className="fa-solid fa-shuffle fa-lg Shuffle"></i>
+            </button>
+          </NavLink>
+          <NavLink className="Adjust-link" to="/adjust">
+            <button className="Shuffle-button" onClick={handleToggle} >
+              <i className="fa-solid fa-sliders fa-lg Shuffle"></i>
+            </button>
+          </NavLink>
         </div>
       </div>
     )

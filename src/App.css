@@ -68,7 +68,7 @@
 
 @media (min-width: 769px) and (max-width: 1249px) {
   .Header-footer-wrapper{
-    width: 80%;
+    width: 80vw;
   }
   .App {
     /* text-align: center; */
@@ -197,4 +197,10 @@
     color: white;
     margin: 0px;
   }
+}
+
+.Color-circle-test{
+  width:180px;
+  height:180px;
+  border-radius: 50%;
 }

@@ -78,18 +78,16 @@
   .About{
     display:flex;
     justify-content: space-between;
+    padding-top: 275px;
   }
 
   .Purple-square{
-    padding-top: 215px;
     width: 55vw;
     margin-left: -20%;
   }
 
   .Health-benefits{
     width: 35%;
-    padding-top: 215px;
-
     align-self: center;
   }
 
@@ -149,7 +147,7 @@
   .About{
     display:flex;
     justify-content: space-between;
-    padding-top: 215px;
+    padding-top: 275px;
   }
 
   .Purple-square{
@@ -219,7 +217,7 @@
   .About{
     display:flex;
     justify-content: space-between;
-    padding-top: 215px;
+    padding-top: 275px;
   }
 
   .Purple-square{

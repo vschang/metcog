@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  .Full-height-2{
+    height: 95vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .Full-height-2{
+    height: 91vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Full-height-2{
+    height: 91vh;
+  }
+}

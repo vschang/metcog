@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    height: 18vh;
   }
 
   h2{
@@ -28,9 +28,7 @@
     font-family:'Futura-Light';
   }
   .Why-breathe{
-    justify-self: center;
-    margin-left: 10px;
-    margin-top: 5px;
+    /* margin-bottom: 20px; */
   }
 
   .Why-breathe:hover{
@@ -52,10 +50,15 @@
   .Shuffle-button{
     background: none;
     border: none;
+    font-size: 1rem;
   }
 
   .Shuffle-button:hover{
     color: #E18A35;
+  }
+
+  .Shuf-btn{
+    margin-right: 20px;
   }
 
   .Adjust{
@@ -86,7 +89,7 @@
     justify-content: center;
     position: fixed;
     width: 100vw;
-    height: 12vh;
+    height: 18vh;
     right: 0;
     bottom: 0;
 
@@ -116,6 +119,7 @@
   .Hamburger-button{
     background: none;
     border:none;
+    font-size: 2rem;
   }
 
   .X-button{
@@ -123,8 +127,9 @@
     background: none;
     border: none;
     position: fixed;
-    top: 8px;
-    right: 8px;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
   }
 
   .Logo-div{
@@ -200,6 +205,7 @@
     margin-top: 25px;
     padding-left: 15px;
     color: white;
+    /* display:none; */
   }
 
   .Shuffle:hover{
@@ -209,6 +215,8 @@
   .Shuffle-button{
     background: none;
     border: none;
+    margin-top: 5px;
+    /* display:none; */
   }
 
   .Shuffle-button:hover{
@@ -303,6 +311,7 @@
     margin-top: 25px;
     padding-left: 15px;
     color: white;
+    /* display: none; */
   }
 
   .Shuffle:hover{
@@ -312,6 +321,8 @@
   .Shuffle-button{
     background: none;
     border: none;
+    margin-top: 5px;
+    /* display:none; */
   }
 
   .Shuffle-button:hover{
