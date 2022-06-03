@@ -37,15 +37,15 @@ const Adjust = () => {
     const getSeconds = () => {
       let seconds;
       if ( index === 0 ){
-          seconds = 103980
+          seconds = 104900
         } else if (index === 1 ){
-          seconds = 92840
+          seconds = 94700
         } else if (index === 2 ){
-          seconds = 121860
+          seconds = 122900
         } else if (index === 3 ){
-          seconds = 92380
+          seconds = 91800
         } else if (index === 4 ){
-          seconds = 116750
+          seconds = 120000
         }
         return seconds
     }
