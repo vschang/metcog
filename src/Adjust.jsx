@@ -72,8 +72,8 @@ return(
     <div className="Exercise-container">
 
     {showGif ?
-      <div className="Exercise-gif">
-        <img src={exerciseArray[index].imgUrl} className='Exercise-gif' alt={exerciseArray[index].alt} />
+      <div className="">
+        <img src={exerciseArray[index].imgUrl} className='Adjust-exercise-gif' alt={exerciseArray[index].alt} />
       </div>
     : <div className='Color-circle' id="rainbow-circle"></div> }
     </div>
