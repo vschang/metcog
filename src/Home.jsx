@@ -5,6 +5,11 @@ import ThreeSix from './images/3-6-breathing.gif'
 import FourSeven from './images/4-7-8-breathing.gif'
 import FiveFive from './images/5-5x5-5-breathing.gif'
 import BoxBreath from './images/box-breath.gif'
+import PerfectMobile from './images/Perfect-mobile.gif'
+import TwoBreathMobile from './images/2-breath-mobile.gif'
+import ThreeSixMobile from './images/3-6-mobile.gif'
+import FourSevenMobile from './images/4-7-8-mobile.gif'
+import BoxBreathMobile from './images/Box-mobile.gif'
 import { Link } from 'react-router-dom';
 
 
@@ -16,10 +21,21 @@ export const Home = () => {
     {id: 3, imgUrl: FourSeven, alt:'4 7 8 breathing exercise' },
     {id: 4, imgUrl: FiveFive, alt:'5-5 x 5-5 breathing exercise' },
     {id: 5, imgUrl: BoxBreath, alt:'Box breath breathing exercise' },
+
+    {id: 6, imgUrl: PerfectMobile, alt:'Perfect breath breathing exercise' },
+    {id: 7, imgUrl: TwoBreathMobile, alt:'2x breathing exercise' },
+    {id: 8, imgUrl: ThreeSixMobile, alt:'3 6 breathing exercise' },
+    {id: 9, imgUrl: FourSevenMobile, alt:'4 7 8 breathing exercise' },
+    {id: 10, imgUrl: BoxBreathMobile, alt:'5-5 x 5-5 breathing exercise' }
   ]
   const [index, setIndex] = useState(0) //first exercise as default
   function changeExercise(){
     let newIndex = Math.floor(Math.random()*5)
+    setIndex(newIndex)
+  }
+  // min = 5 max = 9 diff = 4
+  function changeExerciseMobile(){
+    let newIndex = Math.floor(Math.random()*5) + 5
     setIndex(newIndex)
   }
 
@@ -28,7 +44,7 @@ export const Home = () => {
 
   const [showHero, setShowHero] = useState(true)
   const displayHero = () => setShowHero(false)
-
+  //desktop needs to be updated
   useEffect(()=>{
     const getSeconds = () => {
       let seconds;
@@ -42,6 +58,16 @@ export const Home = () => {
           seconds = 91800
         } else if (index === 4 ){
           seconds = 120000
+        } else if (index === 5 ){
+          seconds = 94000
+        } else if (index === 6 ){
+          seconds = 90000
+        } else if (index === 7 ){
+          seconds = 84000
+        } else if (index === 8 ){
+          seconds = 109000
+        } else if (index === 9 ){
+          seconds = 97000
         }
         return seconds
     }
@@ -64,8 +90,14 @@ export const Home = () => {
             </p>
           </div>
           <div className='Color-circle' id="rainbow-circle"></div>
-          <div className="Button-container">
+          <div className="Button-container-desktop">
             <button onClick={() => {changeExercise(); displayExercise(); displayHero()}} className="Random-button" >Randomize</button>
+            <Link to="/adjust">
+            <button className="Adjust-button">Adjust</button>
+            </Link>
+          </div>
+          <div className="Button-container-mobile">
+            <button onClick={() => {changeExerciseMobile(); displayExercise(); displayHero()}} className="Random-button" >Randomize</button>
             <Link to="/adjust">
             <button className="Adjust-button">Adjust</button>
             </Link>

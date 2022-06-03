@@ -2,16 +2,48 @@
   .Full-height-2{
     height: 95vh;
   }
+
+  .Secondary-random-button-mobile{
+    color: #6DE5BB;
+    background-color: #232323;
+    border: solid 1px #6DE5BB;
+    width: 288px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: center;
+    margin-top: 40px;
+  }
+
+  .Secondary-random-button{
+    display: none;
+  }
+
+  .Exercise-gif{
+    padding-top: 0px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1199px) {
   .Full-height-2{
     height: 91vh;
   }
+  .Secondary-random-button-mobile{
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
   .Full-height-2{
     height: 91vh;
+  }
+  .Secondary-random-button-mobile{
+    display: none;
   }
 }

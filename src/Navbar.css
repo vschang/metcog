@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     height: 18vh;
+    align-items: start;
+    margin-top: 30px;
   }
 
   h2{
@@ -86,13 +88,12 @@
   .Show-menu{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     position: fixed;
     width: 100vw;
-    height: 18vh;
+    height: 34vh;
     right: 0;
-    bottom: 0;
-
+    top: 70px;
     background:#cd44e8;
 
   }
@@ -127,8 +128,8 @@
     background: none;
     border: none;
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 32px;
+    right: 12px;
     font-size: 1.2rem;
   }
 
