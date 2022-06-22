@@ -1,31 +1,58 @@
+.margin-b-0{
+  margin-bottom: 0;
+}
+
+.margin-t-0{
+  margin-top: 0px;
+}
+
+.flex-1{
+  display:flex;
+  margin-top: -15px;
+}
+.ml-5{
+  margin-left: 5px;
+}
+
 @media (max-width: 768px) {
-  .margin-t-0{
-    margin-top: 0px;
+  .selection-div{
+    justify-self: center;
+  }
+
+  .white-arrow{
+    /* margin-right: 55px; */
+    color: white;
+  }
+
+  p{
+    font-size: 0.8125rem;
+  }
+  .normal-p{
+    font-size: 1rem;
+  }
+
+
+  .Bottom-border-flex{
+    border-bottom: 0.75px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
   }
   .Adjust-container {
     width: 100%;
     /* padding-top: 40px; */
     margin-top: -45px;
   }
-
+  .Selection-buttons-mobile {
+    display: flex;
+    flex-direction:column;
+  }
   .Selection-buttons-desktop {
     display: none;
   }
 
   .Color-circle {
-    width: 270px;
-    height: 90px;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    justify-self: center;
-    padding-top: 180px;
-    background-color: #6DE5BB;
-    border-radius: 360px;
-    display: block;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    display:none;
   }
   .Adjust-exercise-gif{
     padding-top: 30px;
@@ -43,26 +70,26 @@
     display: flex;
     justify-content: center;
   }
-  .Exercise-gif{
-    padding-top: 30px;
-    width: 80vw;
+
+  .Exercise-button{
+    border:none;
+    background-color:transparent;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size:1.25rem;
+    text-align: left;
+    margin-left: -7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 300;
   }
-}
-
-
-.Exercise-button{
-  border:none;
-  background-color:transparent;
-  color: white;
-  font-family: 'Lato', sans-serif;
-  font-size:1rem;
-  padding-right: 25px;
 
 }
+
+
 
 /* desktop */
 @media (min-width: 769px) {
-
   :hover.Exercise-button{
     color:#E18A35;
   }
@@ -71,10 +98,17 @@
   }
 
   .Adjust-container{
-    width: 100%;
+    width: 80vw;
     padding-top: 40px;
   }
-
+  .Exercise-button{
+    border:none;
+    background-color:transparent;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size:1rem;
+    padding-right: 25px;
+  }
   .Exercise-container{
     height: 80vh;
     width:75.7vw;
@@ -95,6 +129,20 @@
   }
   p{
     font-size:1rem;
+  }
+  .Color-circle{
+    height: 180px;
+    width: 360px;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    justify-self: center;
+    padding-top: 180px;
+    margin-top: 100px;
+    background-color: #6DE5BB;
+    border-radius: 360px;
+    display: block;
   }
 }
 

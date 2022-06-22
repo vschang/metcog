@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Modal.css'
-import TwoBreath from './images/2x-breath.gif'
-import ThreeSix from './images/3-6-breathing.gif'
-import FourSeven from './images/4-7-8-breathing.gif'
-import FiveFive from './images/5-5x5-5-breathing.gif'
-import BoxBreath from './images/box-breath.gif'
-import PerfectMobile from './images/Perfect-mobile.gif'
+// import TwoBreath from './images/2x-breath.gif'
+// import ThreeSix from './images/3-6-breathing.gif'
+// import FourSeven from './images/4-7-8-breathing.gif'
+// import FiveFive from './images/5-5x5-5-breathing.gif'
+// import BoxBreath from './images/box-breath.gif'
+// import PerfectMobile from './images/Perfect-mobile.gif'
 
 
 const Modal = props => {

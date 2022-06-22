@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css'
 import './Home-2.css'
-import TwoBreath from './images/2x-breath.gif'
-import ThreeSix from './images/3-6-breathing.gif'
-import FourSeven from './images/4-7-8-breathing.gif'
-import FiveFive from './images/5-5x5-5-breathing.gif'
-import BoxBreath from './images/box-breath.gif'
+import TwoBreath from './images/2-breath-random-desktop.gif'
+import ThreeSix from './images/3-6-random-desktop.gif'
+import FourSeven from './images/4-7-8-random-desktop.gif'
+import FiveFive from './images/perfect-random-desktop.gif'
+import BoxBreath from './images/box-random-desktop.gif'
+
 import PerfectMobile from './images/Perfect-random-mobile.gif'
 import TwoBreathMobile from './images/2-breath-random-mobile.gif'
 import ThreeSixMobile from './images/3-6-random-mobile.gif'
-import FourSevenMobile from './images/4-7-8-random-mobil.gif'
+import FourSevenMobile from './images/4-7-8-random-mobile.gif'
 import BoxBreathMobile from './images/Box-random-mobile.gif'
 
 
@@ -21,6 +22,7 @@ export const SecondHome = () => {
     {id: 3, imgUrl: FourSeven, alt:'4 7 8 breathing exercise' },
     {id: 4, imgUrl: FiveFive, alt:'5-5 x 5-5 breathing exercise' },
     {id: 5, imgUrl: BoxBreath, alt:'Box breath breathing exercise' },
+
     {id: 6, imgUrl: PerfectMobile, alt:'Perfect breath breathing exercise' },
     {id: 7, imgUrl: TwoBreathMobile, alt:'2x breathing exercise' },
     {id: 8, imgUrl: ThreeSixMobile, alt:'3 6 breathing exercise' },
@@ -50,15 +52,25 @@ export const SecondHome = () => {
     const getSeconds = () => {
       let seconds;
       if ( index === 0 ){
-          seconds = 104900
+          seconds = 104000
         } else if (index === 1 ){
-          seconds = 94700
+          seconds = 93000
         } else if (index === 2 ){
-          seconds = 122900
+          seconds = 123000
         } else if (index === 3 ){
-          seconds = 91800
+          seconds = 96000
         } else if (index === 4 ){
           seconds = 120000
+        } else if (index === 5 ){
+          seconds = 94000
+        } else if (index === 6 ){
+          seconds = 90000
+        } else if (index === 7 ){
+          seconds = 84000
+        } else if (index === 8 ){
+          seconds = 109000
+        } else if (index === 9 ){
+          seconds = 97000
         }
         return seconds
     }
@@ -68,7 +80,7 @@ export const SecondHome = () => {
   }, [index]);
 
   return (
-    <div className="Full-height-2">
+    <div className="Full-height-2 Full-height-2-random">
         {showSecondHero ?
 
           <div className="Secondary-hero Wrapper">
@@ -77,8 +89,8 @@ export const SecondHome = () => {
             <button onClick={() => {changeExerciseMobile(); displayExercise(); displaySecondHero()}} className="Secondary-random-button-mobile" >Randomize</button>
           </div>
 
-        : <div className="Exercise-gif">
-            <img src={exerciseArray[index].imgUrl} className='Exercise-gif' alt={exerciseArray[index].alt} />
+        : <div className="Exercise-gif-random">
+            <img src={exerciseArray[index].imgUrl} className='' alt={exerciseArray[index].alt} />
           </div> }
 
       </div>

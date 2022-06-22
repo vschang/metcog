@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css'
-import TwoBreath from './images/2x-breath.gif'
-import ThreeSix from './images/3-6-breathing.gif'
-import FourSeven from './images/4-7-8-breathing.gif'
-import FiveFive from './images/5-5x5-5-breathing.gif'
-import BoxBreath from './images/box-breath.gif'
-import PerfectMobile from './images/Perfect-mobile.gif'
-import TwoBreathMobile from './images/2-breath-mobile.gif'
-import ThreeSixMobile from './images/3-6-mobile.gif'
-import FourSevenMobile from './images/4-7-8-mobile.gif'
-import BoxBreathMobile from './images/Box-mobile.gif'
+import TwoBreath from './images/2-breath-random-desktop.gif'
+import ThreeSix from './images/3-6-random-desktop.gif'
+import FourSeven from './images/4-7-8-random-desktop.gif'
+import FiveFive from './images/perfect-random-desktop.gif'
+import BoxBreath from './images/box-random-desktop.gif'
+
+import PerfectMobile from './images/Perfect-random-mobile.gif'
+import TwoBreathMobile from './images/2-breath-random-mobile.gif'
+import ThreeSixMobile from './images/3-6-random-mobile.gif'
+import FourSevenMobile from './images/4-7-8-random-mobile.gif'
+import BoxBreathMobile from './images/Box-random-mobile.gif'
 import { Link } from 'react-router-dom';
 
 
@@ -44,18 +45,17 @@ export const Home = () => {
 
   const [showHero, setShowHero] = useState(true)
   const displayHero = () => setShowHero(false)
-  //desktop needs to be updated
   useEffect(()=>{
     const getSeconds = () => {
       let seconds;
       if ( index === 0 ){
-          seconds = 104900
+          seconds = 104000
         } else if (index === 1 ){
-          seconds = 94700
+          seconds = 93000
         } else if (index === 2 ){
-          seconds = 122900
+          seconds = 123000
         } else if (index === 3 ){
-          seconds = 91800
+          seconds = 96000
         } else if (index === 4 ){
           seconds = 120000
         } else if (index === 5 ){
@@ -78,7 +78,7 @@ export const Home = () => {
 
 
   return (
-    <div className="Full-height">
+    <div className="Full-height Full-height-home">
       {showHero ?
         <div className="Wrapper">
           <div className="Call-action">
@@ -89,13 +89,16 @@ export const Home = () => {
             {/* <em>More time?</em> <br></br> Adjust your preferences as well. */}
             </p>
           </div>
+
           <div className='Color-circle' id="rainbow-circle"></div>
+
           <div className="Button-container-desktop">
             <button onClick={() => {changeExercise(); displayExercise(); displayHero()}} className="Random-button" >Randomize</button>
             <Link to="/adjust">
             <button className="Adjust-button">Adjust</button>
             </Link>
           </div>
+
           <div className="Button-container-mobile">
             <button onClick={() => {changeExerciseMobile(); displayExercise(); displayHero()}} className="Random-button" >Randomize</button>
             <Link to="/adjust">

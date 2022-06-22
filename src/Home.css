@@ -1,7 +1,10 @@
 @media (max-width: 768px) {
 
   .Full-height{
-    height: 95vh;
+    height: 90vh;
+  }
+  .Full-height-home{
+    margin-top: -100px;
   }
   .Wrapper {
     display:grid;
@@ -114,7 +117,8 @@
   }
 
   .Secondary-color-circle{
-    width: 180px;
+    width: 270px;
+    height: 90px;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -129,7 +133,7 @@
   }
   /* //FIX this */
   .Exercise-gif{
-    padding-top: 60px;
+    padding-top: 80px;
     width: 85vw;
   }
 
@@ -280,6 +284,7 @@
 
   .Secondary-hero{
     grid-column-start: 4;
+    padding-top: 40px;
   }
 
   .Secondary-random-button{
@@ -400,13 +405,16 @@
     display: block;
   }
 
-  .Button-container{
+  .Button-container-desktop{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end:4;
     display:flex;
+  }
 
+  .Button-container-mobile{
+    display: none;
   }
 
 
@@ -467,6 +475,7 @@
 
   .Secondary-hero{
     grid-column-start: 4;
+    padding-top: 40px;
   }
 
   .Secondary-random-button{
@@ -650,6 +659,7 @@
 
   .Secondary-hero{
     grid-column-start: 4;
+    padding-top: 40px;
   }
 
   .Secondary-random-button{
