@@ -39,6 +39,10 @@
   .Full-height-2{
     height: 91vh;
   }
+  .rand-exercise-gif{
+    width: 80vw;
+  }
+
   .Secondary-random-button-mobile{
     display: none;
   }
@@ -51,4 +55,8 @@
   .Secondary-random-button-mobile{
     display: none;
   }
+}
+
+.Exercise-gif-random{
+  transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0);
 }

@@ -6,7 +6,6 @@ import ThreeSix from './images/3-6-desktop.gif'
 import FourSeven from './images/4-7-8-desktop.gif'
 import FiveFive from './images/perfect-desktop.gif'
 import BoxBreath from './images/box-desktop.gif'
-
 import PerfectMobile from './images/Perfect-mobile.gif'
 import TwoBreathMobile from './images/2-breath-mobile.gif'
 import ThreeSixMobile from './images/3-6-mobile.gif'
@@ -42,20 +41,29 @@ const Adjust = () => {
   function chooseTwoBreathMobile(){setIndex(6)}
   function chooseThreeSixMobile(){setIndex(7)}
   function chooseFourSevenMobile(){setIndex(8)}
-  function chooseBoxBreathMobile(){setIndex(9)}
-
-  function changeExercise(){
-    let newIndex = Math.floor(Math.random()*5)
-    setIndex(newIndex)
+  function chooseBoxBreathMobile(){
+    setIndex(9)
+    console.log(exerciseArray[9])
+    console.log(exerciseArray[9].imgUrl)
+    console.log(exerciseArray[9].alt)
   }
 
-  function changeExerciseMobile(){
-    let newIndex = Math.floor(Math.random()*5) + 5
-    setIndex(newIndex)
-  }
+  // function changeExercise(){
+  //   let newIndex = Math.floor(Math.random()*5)
+  //   setIndex(newIndex)
+  // }
+
+  // function changeExerciseMobile(){
+  //   let newIndex = Math.floor(Math.random()*5) + 5
+  //   setIndex(newIndex)
+  // }
 
   const [showGif, setShowGif] = useState(false)
-  const displayExercise = () => setShowGif(true)
+
+  const [showModal, setShowModal] = useState(false)
+  const displayExercise = () => [setShowGif(true), setShowModal(true)]
+  const hideExercise = () => [setShowGif(false), setShowModal(false)]
+
   useEffect(()=>{
     const getSeconds = () => {
       let seconds;
@@ -82,12 +90,11 @@ const Adjust = () => {
         }
         return seconds
     }
-    const timer = setTimeout(() => { setShowGif(false) }, getSeconds())
+    const timer = setTimeout(() => { setShowGif(false); setShowModal(false) }, getSeconds())
     return () => {clearTimeout(timer)};
 
   }, [index]);
 
-  const [show, setShow] = useState(false)
 
 
 return(
@@ -102,36 +109,38 @@ return(
 
       <div className="Selection-buttons-desktop">
         <button className="Exercise-button" onClick={()=>{chooseBoxBreath(); displayExercise()}}>Box breath</button>
-        <button className="Exercise-button" onClick={()=>{chooseRelaxBreath(); displayExercise()}}>Relax</button>
-        <button className="Exercise-button" onClick={()=>{choosePerfectBreath(); displayExercise()}}>Perfect Breath</button>
-        <button className="Exercise-button" onClick={()=>{choose2xBreath(); displayExercise()}}>2x breath</button>
-        <button className="Exercise-button" onClick={()=>{choose478Breath(); displayExercise()}}>4-7-8</button>
-        <button className="Exercise-button" onClick={()=>{changeExercise(); displayExercise()}}><i className="fa-solid fa-shuffle fa-lg Shuffle"></i></button>
+        <button className="Exercise-button" onClick={()=>{chooseRelaxBreath(); displayExercise(); setShowModal(true)}}>Relax</button>
+        <button className="Exercise-button" onClick={()=>{choosePerfectBreath(); displayExercise(); setShowModal(true)}}>Perfect Breath</button>
+        <button className="Exercise-button" onClick={()=>{choose2xBreath(); displayExercise(); setShowModal(true)}}>2x breath</button>
+        <button className="Exercise-button" onClick={()=>{choose478Breath(); displayExercise(); setShowModal(true)}}>4-7-8</button>
+        {/* <button className="Exercise-button" onClick={()=>{changeExercise(); displayExercise(); setShow(true)}}><i className="fa-solid fa-shuffle fa-lg Shuffle"></i></button> */}
       </div>
 
+      <Modal onClose={()=> setShowModal(false)} show={showModal} alt={exerciseArray[9].alt} src={exerciseArray[9].imgUrl}/>
+
       <div className="Selection-buttons-mobile">
-        <button className="Exercise-button" onClick={()=>{choosePerfectMobileBreath(); displayExercise(); setShow(true)}}>
+        <button className="Exercise-button" onClick={()=>{choosePerfectMobileBreath(); displayExercise(); setShowModal(true)}}>
           Perfect Breath
           <div className="Bottom-border-flex">
             <p>5.5 sec inhale x 5.5 sec inhale</p>
             <p><i className="fa-solid fa-arrow-right-long white-arrow"></i></p>
           </div>
         </button>
-        <button className="Exercise-button" onClick={()=>{chooseTwoBreathMobile(); displayExercise(); setShow(true)}}>
+        <button className="Exercise-button" onClick={()=>{chooseTwoBreathMobile(); displayExercise(); setShowModal(true)}}>
           2x Breath
           <div className="Bottom-border-flex">
             <p>Doubling your exhale</p>
             <p><i className="fa-solid fa-arrow-right-long white-arrow"></i></p>
           </div>
         </button>
-        <button className="Exercise-button" onClick={()=>{chooseThreeSixMobile(); displayExercise(); setShow(true)}}>
+        <button className="Exercise-button" onClick={()=>{chooseThreeSixMobile(); displayExercise(); setShowModal(true)}}>
           Relax
           <div className="Bottom-border-flex">
             <p>3 sec inhale 6 sec inhale</p>
             <p><i className="fa-solid fa-arrow-right-long white-arrow"></i></p>
           </div>
         </button>
-        <button className="Exercise-button" onClick={()=>{chooseFourSevenMobile(); displayExercise(); setShow(true)}}>
+        <button className="Exercise-button" onClick={()=>{chooseFourSevenMobile(); displayExercise(); setShowModal(true)}}>
           4-7-8
           <div className="Bottom-border-flex">
             <div>
@@ -141,7 +150,7 @@ return(
             <p><i className="fa-solid fa-arrow-right-long white-arrow"></i></p>
           </div>
         </button>
-        <button className="Exercise-button" onClick={()=>{chooseBoxBreathMobile(); displayExercise(); setShow(true)}}>
+        <button className="Exercise-button" onClick={()=>{chooseBoxBreathMobile(); displayExercise(); setShowModal(true)}}>
           Box Breath
           <div className="Bottom-border-flex">
             <div>
@@ -153,16 +162,15 @@ return(
         </button>
         {/* <button className="Exercise-button" onClick={()=>{changeExerciseMobile(); displayExercise()}}><i className="fa-solid fa-shuffle fa-lg Shuffle"></i></button> */}
       </div>
+    </div>
 
-      </div>
     <div className="Exercise-container">
-    {showGif?
+    {/* {showGif?
       <div className="Exercise-gif-container">
         <img src={exerciseArray[index].imgUrl} className="Exercise-gif " alt={exerciseArray[index].alt} />
-        <Modal />
-      </div> :
+      </div> : */}
       <div className='Color-circle' id="rainbow-circle"></div>
-      }
+      {/* } */}
     </div>
   </div>
 )

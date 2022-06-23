@@ -44,7 +44,11 @@ export const Home = () => {
   const displayExercise = () => setShowGif(true)
 
   const [showHero, setShowHero] = useState(true)
-  const displayHero = () => setShowHero(false)
+  const hideHero = () => setShowHero(false)
+
+  const hideExercise = () => setShowGif(false)
+  const displayHero = () => setShowHero(true)
+
   useEffect(()=>{
     const getSeconds = () => {
       let seconds;
@@ -73,7 +77,6 @@ export const Home = () => {
     }
     const timer = setTimeout(() => { setShowGif(false); setShowHero(true) }, getSeconds())
     return () => {clearTimeout(timer)};
-
   }, [index]);
 
 
@@ -93,21 +96,23 @@ export const Home = () => {
           <div className='Color-circle' id="rainbow-circle"></div>
 
           <div className="Button-container-desktop">
-            <button onClick={() => {changeExercise(); displayExercise(); displayHero()}} className="Random-button" >Randomize</button>
+            <button onClick={() => {changeExercise(); displayExercise(); hideHero()}} className="Random-button" >Randomize</button>
             <Link to="/adjust">
             <button className="Adjust-button">Adjust</button>
             </Link>
           </div>
 
           <div className="Button-container-mobile">
-            <button onClick={() => {changeExerciseMobile(); displayExercise(); displayHero()}} className="Random-button" >Randomize</button>
+            <button onClick={() => {changeExerciseMobile(); displayExercise(); hideHero()}} className="Random-button" >Randomize</button>
             <Link to="/adjust">
             <button className="Adjust-button">Adjust</button>
             </Link>
           </div>
+          
         </div>
       : <div className="Exercise-gif">
           <img src={exerciseArray[index].imgUrl} className='Exercise-gif' alt={exerciseArray[index].alt} />
+          <button onClick={() => {hideExercise(); displayHero()}} className="stop-button"><i class="fa-solid fa-arrow-left-long"></i></button>
         </div>}
       </div>
   )

@@ -47,6 +47,9 @@ export const SecondHome = () => {
   const [showSecondHero, setShowSecondHero] = useState(true)
   const displaySecondHero = () => setShowSecondHero(!showSecondHero)
 
+  const hideExercise = () => setShowGif(false)
+  const displaySecondHero2 = () => setShowSecondHero(true)
+
 
   useEffect(()=>{
     const getSeconds = () => {
@@ -90,7 +93,8 @@ export const SecondHome = () => {
           </div>
 
         : <div className="Exercise-gif-random">
-            <img src={exerciseArray[index].imgUrl} className='' alt={exerciseArray[index].alt} />
+            <img src={exerciseArray[index].imgUrl} className='rand-exercise-gif' alt={exerciseArray[index].alt} />
+            <button onClick={() => {hideExercise(); displaySecondHero2()}} className="stop-button"><i class="fa-solid fa-arrow-left-long"></i></button>
           </div> }
 
       </div>

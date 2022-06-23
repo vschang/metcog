@@ -57,6 +57,7 @@
     background: none;
     border: none;
     font-size: 1rem;
+    margin-right: 10px;
   }
 
   .Shuffle-button:hover{
