@@ -108,11 +108,11 @@ export const Home = () => {
             <button className="Adjust-button">Adjust</button>
             </Link>
           </div>
-          
+
         </div>
       : <div className="Exercise-gif">
           <img src={exerciseArray[index].imgUrl} className='Exercise-gif' alt={exerciseArray[index].alt} />
-          <button onClick={() => {hideExercise(); displayHero()}} className="stop-button"><i class="fa-solid fa-arrow-left-long"></i></button>
+          <button onClick={() => {hideExercise(); displayHero()}} className="stop-button"><i className="fa-solid fa-arrow-left-long"></i></button>
         </div>}
       </div>
   )

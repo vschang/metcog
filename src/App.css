@@ -135,6 +135,10 @@
 }
 
 @media (min-width: 1250px) {
+  .Header-footer-wrapper{
+    width: 80vw;
+  }
+
   .App {
     /* text-align: center; */
     background-color: #232323;

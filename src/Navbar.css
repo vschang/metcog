@@ -80,23 +80,21 @@
   }
 
   .Nav-items{
-    display: flex;
-    width: 0%;
-    justify-content: space-between;
-    align-items: center;
+    width: 100vw;
+    overflow: hidden;
+    height: 0%;
     position: fixed;
     top: 0;
     right: 0;
-  }
-
-  .Show-menu{
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    position: fixed;
-    width: 100vw;
-    height: 34vh;
-    right: 0;
+    transition: all 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  }
+
+  .Nav-items.Show-menu{
+    height: 100vh;
     background:#cd44e8;
     padding-top: 0px;
     transition: all 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);

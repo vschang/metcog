@@ -94,7 +94,7 @@ export const SecondHome = () => {
 
         : <div className="Exercise-gif-random">
             <img src={exerciseArray[index].imgUrl} className='rand-exercise-gif' alt={exerciseArray[index].alt} />
-            <button onClick={() => {hideExercise(); displaySecondHero2()}} className="stop-button"><i class="fa-solid fa-arrow-left-long"></i></button>
+            <button onClick={() => {hideExercise(); displaySecondHero2()}} className="stop-button"><i className="fa-solid fa-arrow-left-long"></i></button>
           </div> }
 
       </div>

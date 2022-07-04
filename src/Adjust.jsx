@@ -30,22 +30,61 @@ const exerciseArray = [
 
 const Adjust = () => {
 
-  const [index, setIndex] = useState(null)
-  function chooseBoxBreath(){setIndex(4)}
-  function chooseRelaxBreath(){setIndex(1)}
-  function choosePerfectBreath(){setIndex(3)}
-  function choose2xBreath(){setIndex(0)}
-  function choose478Breath(){setIndex(2)}
+  const [index, setIndex] = useState(0)
+  function chooseBoxBreath(){setIndex(4)
+    console.log(index)
+    console.log(exerciseArray[index])
+    console.log(exerciseArray[index].imgUrl)
+    console.log(exerciseArray[index].alt)}
+  function chooseRelaxBreath(){setIndex(1)
+    console.log(index)
+    console.log(exerciseArray[index])
+    console.log(exerciseArray[index].imgUrl)
+    console.log(exerciseArray[index].alt)}
+  function choosePerfectBreath(){setIndex(3)
+    console.log(index)
+    console.log(exerciseArray[index])
+    console.log(exerciseArray[index].imgUrl)
+    console.log(exerciseArray[index].alt)}
+  function choose2xBreath(){setIndex(0)
+    console.log(index)
+    console.log(exerciseArray[index])
+    console.log(exerciseArray[index].imgUrl)
+    console.log(exerciseArray[index].alt)}
+  function choose478Breath(){setIndex(2)
+    console.log(index)
+    console.log(exerciseArray[index])
+    console.log(exerciseArray[index].imgUrl)
+    console.log(exerciseArray[index].alt)}
 
-  function choosePerfectMobileBreath(){setIndex(5)}
-  function chooseTwoBreathMobile(){setIndex(6)}
-  function chooseThreeSixMobile(){setIndex(7)}
-  function chooseFourSevenMobile(){setIndex(8)}
+  function choosePerfectMobileBreath(){setIndex(5)
+    console.log(index)
+    console.log(exerciseArray[index])
+    console.log(exerciseArray[index].imgUrl)
+    console.log(exerciseArray[index].alt)}
+  function chooseTwoBreathMobile(){setIndex(6)
+    console.log(index)
+    console.log(exerciseArray[index])
+    console.log(exerciseArray[index].imgUrl)
+    console.log(exerciseArray[index].alt)}
+  function chooseThreeSixMobile(){setIndex(7)
+    console.log(index)
+    console.log(exerciseArray[index])
+    console.log(exerciseArray[index].imgUrl)
+    console.log(exerciseArray[index].alt)}
+  function chooseFourSevenMobile(){
+    setIndex(8)
+    console.log(index)
+    console.log(exerciseArray[index])
+    console.log(exerciseArray[index].imgUrl)
+    console.log(exerciseArray[index].alt)
+    }
   function chooseBoxBreathMobile(){
     setIndex(9)
-    console.log(exerciseArray[9])
-    console.log(exerciseArray[9].imgUrl)
-    console.log(exerciseArray[9].alt)
+    console.log(index)
+    console.log(exerciseArray[index])
+    console.log(exerciseArray[index].imgUrl)
+    console.log(exerciseArray[index].alt)
   }
 
   // function changeExercise(){
@@ -57,7 +96,6 @@ const Adjust = () => {
   //   let newIndex = Math.floor(Math.random()*5) + 5
   //   setIndex(newIndex)
   // }
-
   const [showGif, setShowGif] = useState(false)
 
   const [showModal, setShowModal] = useState(false)
@@ -116,7 +154,7 @@ return(
         {/* <button className="Exercise-button" onClick={()=>{changeExercise(); displayExercise(); setShow(true)}}><i className="fa-solid fa-shuffle fa-lg Shuffle"></i></button> */}
       </div>
 
-      <Modal onClose={()=> setShowModal(false)} show={showModal} alt={exerciseArray[9].alt} src={exerciseArray[9].imgUrl}/>
+      <Modal onClose={() => {setShowModal(false); setShowGif(false)}} show={showModal} alt={exerciseArray[index].alt} src={exerciseArray[index].imgUrl}/>
 
       <div className="Selection-buttons-mobile">
         <button className="Exercise-button" onClick={()=>{choosePerfectMobileBreath(); displayExercise(); setShowModal(true)}}>
