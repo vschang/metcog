@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css'
+import Modal from './Modal.jsx'
 import TwoBreath from './images/2-breath-random-desktop.gif'
 import ThreeSix from './images/3-6-random-desktop.gif'
 import FourSeven from './images/4-7-8-random-desktop.gif'
@@ -41,13 +42,14 @@ export const Home = () => {
   }
 
   const [showGif, setShowGif] = useState(false)
-  const displayExercise = () => setShowGif(true)
-
-  const [showHero, setShowHero] = useState(true)
-  const hideHero = () => setShowHero(false)
-
   const hideExercise = () => setShowGif(false)
-  const displayHero = () => setShowHero(true)
+
+  // const [showHero, setShowHero] = useState(true)
+  // const hideHero = () => setShowHero(false)
+  // const displayHero = () => setShowHero(true)
+
+  const [showModal, setShowModal] = useState(false)
+  const displayExercise = () => [setShowGif(true), setShowModal(true)]
 
   useEffect(()=>{
     const getSeconds = () => {
@@ -75,14 +77,14 @@ export const Home = () => {
         }
         return seconds
     }
-    const timer = setTimeout(() => { setShowGif(false); setShowHero(true) }, getSeconds())
+    const timer = setTimeout(() => { setShowGif(false)}, getSeconds())
     return () => {clearTimeout(timer)};
   }, [index]);
 
 
   return (
     <div className="Full-height Full-height-home">
-      {showHero ?
+      {/* {showHero ? */}
         <div className="Wrapper">
           <div className="Call-action">
             <h1>
@@ -96,24 +98,26 @@ export const Home = () => {
           <div className='Color-circle' id="rainbow-circle"></div>
 
           <div className="Button-container-desktop">
-            <button onClick={() => {changeExercise(); displayExercise(); hideHero()}} className="Random-button" >Randomize</button>
+            <button onClick={() => {changeExercise(); displayExercise()}} className="Random-button" >Randomize</button>
             <Link to="/adjust">
-            <button className="Adjust-button">Adjust</button>
+            <button className="Adjust-button">Choose</button>
             </Link>
           </div>
 
+          <Modal onClose={() => {setShowModal(false); setShowGif(false)}} show={showModal} alt={exerciseArray[index].alt} src={exerciseArray[index].imgUrl}/>
+
           <div className="Button-container-mobile">
-            <button onClick={() => {changeExerciseMobile(); displayExercise(); hideHero()}} className="Random-button" >Randomize</button>
+            <button onClick={() => {changeExerciseMobile(); displayExercise()}} className="Random-button" >Randomize</button>
             <Link to="/adjust">
-            <button className="Adjust-button">Adjust</button>
+            <button className="Adjust-button">Choose</button>
             </Link>
           </div>
 
         </div>
-      : <div className="Exercise-gif">
+      {/* : <div className="Exercise-gif">
           <img src={exerciseArray[index].imgUrl} className='Exercise-gif' alt={exerciseArray[index].alt} />
           <button onClick={() => {hideExercise(); displayHero()}} className="stop-button"><i className="fa-solid fa-arrow-left-long"></i></button>
-        </div>}
+        </div>} */}
       </div>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css'
 import './Home-2.css'
+import Modal from './Modal.jsx'
 import TwoBreath from './images/2-breath-random-desktop.gif'
 import ThreeSix from './images/3-6-random-desktop.gif'
 import FourSeven from './images/4-7-8-random-desktop.gif'
@@ -40,15 +41,14 @@ export const SecondHome = () => {
     let newIndex = Math.floor(Math.random()*5) + 5
     setIndex(newIndex)
   }
-
   const [showGif, setShowGif] = useState(false)
-  const displayExercise = () => setShowGif(true)
+  // const [showSecondHero, setShowSecondHero] = useState(true)
+  // const displaySecondHero = () => setShowSecondHero(!showSecondHero)
+  // const displaySecondHero2 = () => setShowSecondHero(true)
 
-  const [showSecondHero, setShowSecondHero] = useState(true)
-  const displaySecondHero = () => setShowSecondHero(!showSecondHero)
-
-  const hideExercise = () => setShowGif(false)
-  const displaySecondHero2 = () => setShowSecondHero(true)
+  const [showModal, setShowModal] = useState(false)
+  const displayExercise = () => [setShowGif(true), setShowModal(true)]
+  const hideExercise = ()=> [setShowGif(false), setShowModal(false)]
 
 
   useEffect(()=>{
@@ -77,25 +77,27 @@ export const SecondHome = () => {
         }
         return seconds
     }
-    const timer = setTimeout(() => { setShowGif(false); setShowSecondHero(true) }, getSeconds())
+    const timer = setTimeout(() => { hideExercise() }, getSeconds())
     return () => {clearTimeout(timer)};
 
   }, [index]);
 
   return (
     <div className="Full-height-2 Full-height-2-random">
-        {showSecondHero ?
+        {/* {showSecondHero ? */}
 
           <div className="Secondary-hero Wrapper">
             <div className='Secondary-color-circle' id="rainbow-circle"></div>
-            <button onClick={() => {changeExercise(); displayExercise(); displaySecondHero()}} className="Secondary-random-button" >Randomize</button>
-            <button onClick={() => {changeExerciseMobile(); displayExercise(); displaySecondHero()}} className="Secondary-random-button-mobile" >Randomize</button>
+            <button onClick={() => {changeExercise(); displayExercise()}} className="Secondary-random-button" >Randomize</button>
+            <button onClick={() => {changeExerciseMobile(); displayExercise()}} className="Secondary-random-button-mobile" >Randomize</button>
           </div>
 
-        : <div className="Exercise-gif-random">
+          <Modal onClose={() => {setShowModal(false); setShowGif(false)}} show={showModal} alt={exerciseArray[index].alt} src={exerciseArray[index].imgUrl}/>
+
+        {/* : <div className="Exercise-gif-random">
             <img src={exerciseArray[index].imgUrl} className='rand-exercise-gif' alt={exerciseArray[index].alt} />
             <button onClick={() => {hideExercise(); displaySecondHero2()}} className="stop-button"><i className="fa-solid fa-arrow-left-long"></i></button>
-          </div> }
+          </div> } */}
 
       </div>
   )
