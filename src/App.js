@@ -2,7 +2,7 @@ import './App.css';
 import HomePage from './pages/Home-page.jsx'
 import AdjustPage from './pages/Adjust-page.jsx'
 import RandomizePage from './pages/Randomize-page.jsx'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 const App = (props) => {
