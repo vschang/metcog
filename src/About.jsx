@@ -9,7 +9,7 @@ function About() {
         <img src={purpleSquare} className="Purple-square" id="Benefits-text" alt="purple square" />
       </div>
       <div className="Health-benefits" >
-        <a><h3>Health Benefits of Breathing</h3></a>
+        <h3 className="margin-b-0">Health Benefits <br /> of Breathing</h3>
         <ul>
           <li>Reduce Anxiety
             <p className="list-p">Calm your mind and body with a few breaths.</p>

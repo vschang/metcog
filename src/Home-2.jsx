@@ -87,7 +87,7 @@ export const SecondHome = () => {
         {/* {showSecondHero ? */}
 
           <div className="Secondary-hero Wrapper">
-            <div className='Secondary-color-circle' id="rainbow-circle"></div>
+            <div className='Secondary-color-circle-2' id="rainbow-circle"></div>
             <button onClick={() => {changeExercise(); displayExercise()}} className="Secondary-random-button" >Randomize</button>
             <button onClick={() => {changeExerciseMobile(); displayExercise()}} className="Secondary-random-button-mobile" >Randomize</button>
           </div>

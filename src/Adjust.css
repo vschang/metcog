@@ -52,7 +52,7 @@
   }
 
   .Color-circle {
-    width: 180px;
+    /* width: 180px; */
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -108,7 +108,7 @@
 
   .Adjust-container{
     width: 80vw;
-    padding-top: 40px;
+    padding-top: 0px;
     display:flex;
 
     flex-direction: row-reverse;
@@ -178,7 +178,7 @@
     color:#E18A35;
   }
   .selection-div{
-    margin-top: 90px;
+    margin-top: 125px;
   }
 
   .Selection-buttons-mobile{
@@ -187,12 +187,13 @@
 
   .Adjust-container{
     width: 80vw;
-    padding-top: 40px;
+    padding-top: 0px;
     display:flex;
 
     flex-direction: row-reverse;
   }
   .selection-div{
+    margin-top: 125px;
     flex: 1;
   }
 

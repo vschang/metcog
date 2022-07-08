@@ -51,11 +51,6 @@
   }
 
 
-  .big-p{
-    font-size: 1.25rem;
-  }
-
-
   h1{
     font-size: 3.062rem;
     /* font-family: 'Playfair Display', serif; */
@@ -116,11 +111,6 @@
 
   #Benefits-text{
     overflow-y: scroll;
-  }
-
-
-  .big-p{
-    font-size: 1.25rem;
   }
 
 
@@ -188,9 +178,9 @@
   }
 
 
-  .big-p{
+  /* .big-p{
     font-size: 1.25rem;
-  }
+  } */
 
 
   h1{

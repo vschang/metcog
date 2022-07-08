@@ -21,6 +21,22 @@
     margin-top: 40px;
   }
 
+  .Secondary-color-circle-2{
+    width: 270px;
+    height: 90px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    padding-top: 180px;
+    background-color: #6DE5BB;
+    border-radius: 360px;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
   .Secondary-random-button{
     display: none;
   }
@@ -46,6 +62,19 @@
   .Secondary-random-button-mobile{
     display: none;
   }
+  .Secondary-color-circle-2{
+    height: 180px;
+    width: 360px;
+    justify-self: center;
+    padding-top: 180px;
+    margin-top: 0px;
+    background-color: #6DE5BB;
+    border-radius: 360px;
+    display: block;
+    margin-left: 80px;
+    grid-column-start: 4;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -55,8 +84,50 @@
   .Secondary-random-button-mobile{
     display: none;
   }
+  .Secondary-color-circle-2{
+    height: 180px;
+    width: 360px;
+    justify-self: center;
+    padding-top: 180px;
+    margin-top: 0px;
+    background-color: #6DE5BB;
+    border-radius: 360px;
+    display: block;
+    margin-left: -80px;
+    grid-column-start: 5;
+  }
 }
 
 .Exercise-gif-random{
   transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .Color-circle {
+    animation: App-logo-color infinite 10s linear;
+    animation-direction: alternate;
+  }
+  .Secondary-color-circle-2 {
+    animation: App-logo-color infinite 10s linear;
+    animation-direction: alternate;
+  }
+
+}
+
+
+@keyframes App-logo-pulse {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes App-logo-color {
+  0%   {background-color: #6DE5BB;}
+  30%  {background-color: #CD44E8;}
+  60%  {background-color: #E18A35;}
+  100% {background-color: #6DE5BB;}
 }

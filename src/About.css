@@ -3,6 +3,16 @@
     display:flex;
     flex-direction:column;
   }
+  .margin-t-0{
+    margin-top: 0px;
+  }
+
+  .margin-b-0{
+    margin-bottom:0px;
+  }
+  .title{
+    display: block;
+  }
 
   .Purple-square{
     padding-top:40px;

@@ -40,7 +40,8 @@
   }
 
   .Color-circle{
-    width: 180px;
+    width: 270px;
+    height: 90px;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -223,6 +224,7 @@
 
   .big-p{
     font-size: 1.125rem;
+    margin-top: 0px;
   }
 
 
