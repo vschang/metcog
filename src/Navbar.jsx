@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 function Navbar() {
   const [navBarOpen, setNavBarOpen] = useState(false)
   const handleToggle = () => {setNavBarOpen(prev => !prev)}
-  const closeMenu = () => {setNavBarOpen(false)}
+  // const closeMenu = () => {setNavBarOpen(false)}
 
     return (
       <div className="Nav-Bar">

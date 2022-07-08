@@ -83,8 +83,73 @@
     overflow-y: scroll;
   }
 }
+/* ipad air */
+@media (min-width: 769px) and (max-width: 821px){
+  .Purple-square {
+      width: 55vw;
+      margin-left: -20%;
+      margin-top: 75px;
+  }
+  .About{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 275px;
+  }
+  .Health-benefits{
+    width: 35%;
+    align-self: center;
+  }
 
-@media (min-width: 769px) and (max-width: 1100px) {
+  .list-p{
+    margin-top: 5px;
+    padding-bottom: 18px;
+  }
+  h3{
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1.4rem;
+  }
+
+  ul {
+    padding-inline-start: 10px;
+  }
+
+  li{
+    color: white;
+    font-size: 1.125rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+  ::marker{
+    color:#cd44e8;
+    font-size: .75rem;
+  }
+  p{
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: 300;
+  }
+
+  a{
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: 300;
+    text-decoration:none;
+  }
+
+  a:hover{
+    color: #E18A35;
+  }
+
+  #Benefits-text{
+    overflow-y: scroll;
+  }
+}
+@media (min-width: 822px) and (max-width: 1100px) {
   .About{
     display:flex;
     justify-content: space-between;

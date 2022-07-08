@@ -42,7 +42,6 @@ export const Home = () => {
   }
 
   const [showGif, setShowGif] = useState(false)
-  const hideExercise = () => setShowGif(false)
 
   // const [showHero, setShowHero] = useState(true)
   // const hideHero = () => setShowHero(false)
