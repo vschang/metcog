@@ -41,7 +41,7 @@ export const Home = () => {
     setIndex(newIndex)
   }
 
-  const [showGif, setShowGif] = useState(false)
+  const [showGif, setShowGif] = useState(false) // eslint-disable-line
 
   // const [showHero, setShowHero] = useState(true)
   // const hideHero = () => setShowHero(false)

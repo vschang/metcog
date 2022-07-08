@@ -34,10 +34,6 @@
     display: block;
   }
 
-  .Why-breathe{
-    /* margin-bottom: 20px; */
-  }
-
   .Why-breathe:hover{
     color: #E18A35;
   }
@@ -63,10 +59,6 @@
 
   .Shuffle-button:hover{
     color: #E18A35;
-  }
-
-  .Shuf-btn{
-    /* margin-right: 20px; */
   }
 
   .Adjust{

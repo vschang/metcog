@@ -41,7 +41,7 @@ export const SecondHome = () => {
     let newIndex = Math.floor(Math.random()*5) + 5
     setIndex(newIndex)
   }
-  const [showGif, setShowGif] = useState(false)
+  const [showGif, setShowGif] = useState(false) // eslint-disable-line
   // const [showSecondHero, setShowSecondHero] = useState(true)
   // const displaySecondHero = () => setShowSecondHero(!showSecondHero)
   // const displaySecondHero2 = () => setShowSecondHero(true)

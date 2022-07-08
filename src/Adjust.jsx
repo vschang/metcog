@@ -50,7 +50,7 @@ const Adjust = () => {
   //   let newIndex = Math.floor(Math.random()*5) + 5
   //   setIndex(newIndex)
   // }
-  const [showGif, setShowGif] = useState(false)
+  const [showGif, setShowGif] = useState(false) // eslint-disable-line
 
   const [showModal, setShowModal] = useState(false)
   const displayExercise = () => [setShowGif(true), setShowModal(true)]
