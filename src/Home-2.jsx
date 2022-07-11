@@ -2,33 +2,21 @@ import React, { useState, useEffect } from 'react';
 import './Home.css'
 import './Home-2.css'
 import Modal from './Modal.jsx'
-import TwoBreath from './images/2-breath-random-desktop.gif'
-import ThreeSix from './images/3-6-random-desktop.gif'
-import FourSeven from './images/4-7-8-random-desktop.gif'
-import FiveFive from './images/perfect-random-desktop.gif'
-import BoxBreath from './images/box-random-desktop.gif'
-
-import PerfectMobile from './images/Perfect-random-mobile.gif'
-import TwoBreathMobile from './images/2-breath-random-mobile.gif'
-import ThreeSixMobile from './images/3-6-random-mobile.gif'
-import FourSevenMobile from './images/4-7-8-random-mobile.gif'
-import BoxBreathMobile from './images/Box-random-mobile.gif'
-
 
 export const SecondHome = () => {
 
   const exerciseArray = [
-    {id: 1, imgUrl: TwoBreath, alt:'2x breathing exercise' },
-    {id: 2, imgUrl: ThreeSix, alt:'3 6 breathing exercise' },
-    {id: 3, imgUrl: FourSeven, alt:'4 7 8 breathing exercise' },
-    {id: 4, imgUrl: FiveFive, alt:'5-5 x 5-5 breathing exercise' },
-    {id: 5, imgUrl: BoxBreath, alt:'Box breath breathing exercise' },
+    {id: 1, imgUrl: "https://i.imgur.com/ifXrZA2.gif", alt:'2x breathing exercise' },
+    {id: 2, imgUrl: "https://i.imgur.com/xUuQceU.gif", alt:'3 6 breathing exercise' },
+    {id: 3, imgUrl: "https://i.imgur.com/D33P72Y.gif", alt:'4 7 8 breathing exercise' },
+    {id: 4, imgUrl: "https://i.imgur.com/cCIPY2i.gif", alt:'perfect breathing exercise' },
+    {id: 5, imgUrl: "https://i.imgur.com/uXHWD9b.gif", alt:'Box breath breathing exercise' },
 
-    {id: 6, imgUrl: PerfectMobile, alt:'Perfect breath breathing exercise' },
-    {id: 7, imgUrl: TwoBreathMobile, alt:'2x breathing exercise' },
-    {id: 8, imgUrl: ThreeSixMobile, alt:'3 6 breathing exercise' },
-    {id: 9, imgUrl: FourSevenMobile, alt:'4 7 8 breathing exercise' },
-    {id: 10, imgUrl: BoxBreathMobile, alt:'5-5 x 5-5 breathing exercise' }
+    {id: 6, imgUrl: "https://i.ibb.co/Vq1Lyvr/Perfect-random-mobile.gif", alt:'Perfect breath breathing exercise' },
+    {id: 7, imgUrl: "https://i.ibb.co/T0gNYK3/2-breath-random-mobile.gif", alt:'2x breathing exercise' },
+    {id: 8, imgUrl: "https://i.ibb.co/XZ8nmxj/3-6-random-mobile.gif ", alt:'3 6 breathing exercise' },
+    {id: 9, imgUrl: "https://i.ibb.co/k1HH1ZX/4-7-8-random-mobil.gif", alt:'4 7 8 breathing exercise' },
+    {id: 10, imgUrl: "https://i.ibb.co/wWWhLY7/Box-random-mobile.gif", alt:'5-5 x 5-5 breathing exercise' }
   ]
 
   const [index, setIndex] = useState(0) //first exercise as default

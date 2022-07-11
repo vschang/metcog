@@ -1,31 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import './Adjust.css'
 import Modal from './Modal.jsx'
-import TwoBreath from './images/2-breath-desktop.gif'
-import ThreeSix from './images/3-6-desktop.gif'
-import FourSeven from './images/4-7-8-desktop.gif'
-import FiveFive from './images/perfect-desktop.gif'
-import BoxBreath from './images/box-desktop.gif'
-import PerfectMobile from './images/Perfect-mobile.gif'
-import TwoBreathMobile from './images/2-breath-mobile.gif'
-import ThreeSixMobile from './images/3-6-mobile.gif'
-import FourSevenMobile from './images/4-7-8-mobile.gif'
-import BoxBreathMobile from './images/Box-mobile.gif'
-
 
 const exerciseArray = [
-  {id: 1, imgUrl: TwoBreath, alt:'2x breathing exercise' },
-  {id: 2, imgUrl: ThreeSix, alt:'3 6 breathing exercise' },
-  {id: 3, imgUrl: FourSeven, alt:'4 7 8 breathing exercise' },
-  {id: 4, imgUrl: FiveFive, alt:'5-5 x 5-5 breathing exercise' },
-  {id: 5, imgUrl: BoxBreath, alt:'Box breath breathing exercise' },
+  {id: 1, imgUrl: "https://i.imgur.com/JIhlmQn.gif", alt:'2x breathing exercise' },
+  {id: 2, imgUrl: "https://i.imgur.com/XFsamqT.gif", alt:'3 6 breathing exercise' },
+  {id: 3, imgUrl: "https://i.imgur.com/IonK6wd.gif", alt:'4 7 8 breathing exercise' },
+  {id: 4, imgUrl: "https://i.imgur.com/ezdzjFd.gif", alt:'5-5 x 5-5 breathing exercise' },
+  {id: 5, imgUrl: "https://i.imgur.com/g5L79Ok.gif", alt:'Box breath breathing exercise' },
 
-  {id: 6, imgUrl: PerfectMobile, alt:'Perfect breath breathing exercise' },
-  {id: 7, imgUrl: TwoBreathMobile, alt:'2x breathing exercise' },
-  {id: 8, imgUrl: ThreeSixMobile, alt:'3 6 breathing exercise' },
-  {id: 9, imgUrl: FourSevenMobile, alt:'4 7 8 breathing exercise' },
-  {id: 10, imgUrl: BoxBreathMobile, alt:'5-5 x 5-5 breathing exercise' },
-
+  {id: 6, imgUrl: "https://i.ibb.co/19MKXtt/Perfect-mobile.gif", alt:'Perfect breath breathing exercise' },
+  {id: 7, imgUrl: "https://i.ibb.co/1GGD82J/2-breath-mobile.gif", alt:'2x breathing exercise' },
+  {id: 8, imgUrl: "https://i.ibb.co/tHq0Lp6/3-6-mobile.gif", alt:'3 6 breathing exercise' },
+  {id: 9, imgUrl: "https://i.ibb.co/LgXfxvv/4-7-8-mobile.gif", alt:'4 7 8 breathing exercise' },
+  {id: 10, imgUrl: "https://i.ibb.co/t2mhfdt/Box-mobile.gif ", alt:'5-5 x 5-5 breathing exercise' },
 ]
 
 const Adjust = () => {
@@ -41,15 +29,6 @@ const Adjust = () => {
   function chooseFourSevenMobile(){setIndex(8)}
   function chooseBoxBreathMobile(){setIndex(9)}
 
-  // function changeExercise(){
-  //   let newIndex = Math.floor(Math.random()*5)
-  //   setIndex(newIndex)
-  // }
-
-  // function changeExerciseMobile(){
-  //   let newIndex = Math.floor(Math.random()*5) + 5
-  //   setIndex(newIndex)
-  // }
   const [showGif, setShowGif] = useState(false) // eslint-disable-line
 
   const [showModal, setShowModal] = useState(false)
@@ -88,7 +67,6 @@ const Adjust = () => {
   }, [index]);
 
 
-
 return(
   <div className="Adjust-container">
     <div className="selection-div">
@@ -98,7 +76,6 @@ return(
         <p className="normal-p"><em>Know what you like?</em></p>
         <p className="ml-5 normal-p">Choose your exercise.</p>
       </div>
-
       <div className="Selection-buttons-desktop">
         <button className="Exercise-button" onClick={()=>{chooseBoxBreath(); displayExercise()}}>Box breath</button>
         <button className="Exercise-button" onClick={()=>{chooseRelaxBreath(); displayExercise(); setShowModal(true)}}>Relax</button>
