@@ -69,7 +69,13 @@
     margin-top: 20px;
   }
   .Adjust-exercise-gif{
-    width: 82vw;
+    padding-top: 150px;
+    margin-left: -45vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    left: 50%;
+    width: 90vw;
   }
 
   .Exercise-container{

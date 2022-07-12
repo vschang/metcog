@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.023ab72c.css",
+    "main.js": "/static/js/main.647b8984.js",
+    "static/media/4-7-8-random-desktop.gif": "/static/media/4-7-8-random-desktop.3a9f384c1b8e0311bece.gif",
+    "static/media/2-breath-random-desktop.gif": "/static/media/2-breath-random-desktop.a0a1ecc0b60e6f874a51.gif",
+    "static/media/3-6-desktop.gif": "/static/media/3-6-desktop.4b0e72c066fa254e615a.gif",
+    "static/media/box-random-desktop.gif": "/static/media/box-random-desktop.111fcb00ce3ebd86a38c.gif",
+    "static/media/box-desktop.gif": "/static/media/box-desktop.67bd8d848589d00965fe.gif",
+    "static/media/3-6-random-desktop.gif": "/static/media/3-6-random-desktop.3cc9e48eb273e10211c5.gif",
+    "static/media/2-breath-desktop.gif": "/static/media/2-breath-desktop.2c398f59f290673632c8.gif",
+    "static/media/perfect-random-desktop.gif": "/static/media/perfect-random-desktop.dd10fbc752eb4b5eff9b.gif",
+    "static/media/4-7-8-desktop.gif": "/static/media/4-7-8-desktop.f78b24a434f83ac63747.gif",
+    "static/media/perfect-desktop.gif": "/static/media/perfect-desktop.9b4dc100d870b5d9d832.gif",
+    "static/media/Perfect-random-mobile.gif": "/static/media/Perfect-random-mobile.9fc6ca64d5243bc5d2eb.gif",
+    "static/media/3-6-random-mobile.gif": "/static/media/3-6-random-mobile.705d0743144fe8693a61.gif",
+    "static/media/2-breath-random-mobile.gif": "/static/media/2-breath-random-mobile.d66bf90b9f6f9455924b.gif",
+    "static/media/Perfect-mobile.gif": "/static/media/Perfect-mobile.5d44ecb73d6ff3739fae.gif",
+    "static/media/4-7-8-random-mobile.gif": "/static/media/4-7-8-random-mobile.c62ffba9f70b3f2655ce.gif",
+    "static/media/2-breath-mobile.gif": "/static/media/2-breath-mobile.19a9d4568d7e32ccb812.gif",
+    "static/media/3-6-mobile.gif": "/static/media/3-6-mobile.27702c9ab560f43700d8.gif",
+    "static/media/Box-random-mobile.gif": "/static/media/Box-random-mobile.72b9d5ab6d88ecc7ace5.gif",
+    "static/media/4-7-8-mobile.gif": "/static/media/4-7-8-mobile.329c5b5609cac49687e1.gif",
+    "static/media/Box-mobile.gif": "/static/media/Box-mobile.f4bfe9d4aa41225ccf3f.gif",
+    "static/media/futura-medium-bt.ttf": "/static/media/futura-medium-bt.4e762c29ef7b44ca51cb.ttf",
+    "static/media/futura-light-bt.ttf": "/static/media/futura-light-bt.ead7282f8edac7904e53.ttf",
+    "static/media/purple-square.png": "/static/media/purple-square.2ed94311c37d581e9a34.png",
+    "index.html": "/index.html",
+    "main.023ab72c.css.map": "/static/css/main.023ab72c.css.map",
+    "main.647b8984.js.map": "/static/js/main.647b8984.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.023ab72c.css",
+    "static/js/main.647b8984.js"
+  ]
+}
