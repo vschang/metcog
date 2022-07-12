@@ -7,24 +7,24 @@ import { Link } from 'react-router-dom';
 export const Home = () => {
 
   const exerciseArray = [
-    {id: 1, imgUrl: "https://i.imgur.com/ifXrZA2.gif", alt:'2x breathing exercise' },
-    {id: 2, imgUrl: "https://i.imgur.com/xUuQceU.gif", alt:'3 6 breathing exercise' },
-    {id: 3, imgUrl: "https://i.imgur.com/D33P72Y.gif", alt:'4 7 8 breathing exercise' },
-    {id: 4, imgUrl: "https://i.imgur.com/cCIPY2i.gif", alt:'perfect breathing exercise' },
-    {id: 5, imgUrl: "https://i.imgur.com/uXHWD9b.gif", alt:'Box breath breathing exercise' },
+    {id: 1, imgUrl: "https://i.imgur.com/qVIQLW6.mp4", alt:'2x breathing exercise' },
+    {id: 2, imgUrl: "https://i.imgur.com/t4LmqLB.mp4", alt:'3 6 breathing exercise' },
+    {id: 3, imgUrl: "https://i.imgur.com/suOAxS8.mp4", alt:'4 7 8 breathing exercise' },
+    {id: 4, imgUrl: "https://i.imgur.com/A9KNORE.mp4", alt:'perfect breathing exercise' },
+    {id: 5, imgUrl: "https://i.imgur.com/Sq8ofiv.mp4", alt:'Box breath breathing exercise' },
 
-    {id: 6, imgUrl: "https://i.ibb.co/Vq1Lyvr/Perfect-random-mobile.gif", alt:'Perfect breath breathing exercise' },
-    {id: 7, imgUrl: "https://i.ibb.co/T0gNYK3/2-breath-random-mobile.gif", alt:'2x breathing exercise' },
-    {id: 8, imgUrl: "https://i.ibb.co/XZ8nmxj/3-6-random-mobile.gif", alt:'3 6 breathing exercise' },
-    {id: 9, imgUrl: "https://i.ibb.co/k1HH1ZX/4-7-8-random-mobil.gif", alt:'4 7 8 breathing exercise' },
-    {id: 10, imgUrl: "https://i.ibb.co/wWWhLY7/Box-random-mobile.gif", alt:'5-5 x 5-5 breathing exercise' }
+    {id: 6, imgUrl: "https://i.imgur.com/OW5c4DE.mp4", alt:'Perfect breath breathing exercise' },
+    {id: 7, imgUrl: "https://i.imgur.com/z5y0npW.mp4", alt:'2x breathing exercise' },
+    {id: 8, imgUrl: "https://i.imgur.com/NH118HJ.mp4", alt:'3 6 breathing exercise' },
+    {id: 9, imgUrl: "https://i.imgur.com/HoPMaYD.mp4", alt:'4 7 8 breathing exercise' },
+    {id: 10, imgUrl: "https://i.imgur.com/vEYU7Dl.mp4", alt:'5-5 x 5-5 breathing exercise' }
   ]
   const [index, setIndex] = useState(0) //first exercise as default
   function changeExercise(){
     let newIndex = Math.floor(Math.random()*5)
     setIndex(newIndex)
   }
-  // min = 5 max = 9 diff = 4
+
   function changeExerciseMobile(){
     let newIndex = Math.floor(Math.random()*5) + 5
     setIndex(newIndex)
@@ -42,16 +42,16 @@ export const Home = () => {
   useEffect(()=>{
     const getSeconds = () => {
       let seconds;
-      if ( index === 0 ){
+      if ( index === 0 ){ // 2x
           seconds = 104000
-        } else if (index === 1 ){
-          seconds = 93000
-        } else if (index === 2 ){
-          seconds = 123000
-        } else if (index === 3 ){
-          seconds = 96000
-        } else if (index === 4 ){
-          seconds = 120000
+        } else if (index === 1 ){ // 3 6
+          seconds = 94000
+        } else if (index === 2 ){ // 4 7 8
+          seconds = 122000
+        } else if (index === 3 ){ // perfect
+          seconds = 91000
+        } else if (index === 4 ){// box
+          seconds = 113000
         } else if (index === 5 ){
           seconds = 94000
         } else if (index === 6 ){

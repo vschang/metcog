@@ -1,16 +1,21 @@
 import './Modal.css'
 
 const Modal = props => {
-  const img = document.querySelector('img')
-  setTimeout(() => {
-    img.src = `${img.src.replace(/\?.*$/,"")}?x=${Math.random()}`;
-  }, 0)
+
+  // function restartVideo(){
+  //   const video = document.querySelector('video');
+  //   video.pause();
+  //   video.currentTime = 0;
+  //   video.load();
+  // }
 
   return (
     <div className={`modal ${props.show ? 'show' : ''}`}>
       <div className='modal-content'>
         <div className='modal-body'>
-          <img src={props.src} className='Adjust-exercise-gif' alt={props.alt} />
+          {/* <img src={props.src} className='Adjust-exercise-gif' alt={props.alt} /> */}
+          < video id="Exercise-vid" className='Adjust-exercise-gif' width="750" height="500" autoPlay={true} muted playsInline src={props.src} alt={props.alt} type="video/mp4">
+          </video>
         </div>
           <button onClick={props.onClose} className='close'><i className="fa-solid fa-xmark" ></i></button>
       </div>
