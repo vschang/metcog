@@ -28,7 +28,7 @@
   .Health-benefits{
     width: 75%;
     align-self: center;
-    text-align: center;
+    text-align: left;
     padding-top:60px;
   }
 
@@ -74,11 +74,6 @@
     font-weight: 300;
     text-decoration:none;
   }
-
-  a:hover{
-    color: #E18A35;
-  }
-
   #Benefits-text{
     overflow-y: scroll;
   }

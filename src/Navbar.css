@@ -20,22 +20,25 @@
     text-decoration:none;
   }
 
-  a:hover{
-    color: #E18A35;
-  }
   .Logo{
     color: white;
     font-size: 1.25rem;
     font-weight: 300;
     font-family:'Futura-Medium';
   }
+  .Logo-button{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family:'Futura-Medium';
+    background:none;
+    border:none;
+  }
+
   .Mobile-logo{
     display: block;
   }
 
-  .Why-breathe:hover{
-    color: #E18A35;
-  }
 
   .Shuffle{
     align-self: center;
@@ -45,9 +48,6 @@
     color: white;
   }
 
-  .Shuffle:hover{
-    color: #E18A35;
-  }
 
   .Shuffle-button{
     background: none;
@@ -56,9 +56,6 @@
     margin-right: 10px;
   }
 
-  .Shuffle-button:hover{
-    color: #E18A35;
-  }
 
   .Adjust{
     grid-column-start: 8;
@@ -240,8 +237,7 @@
   .Nav-items{
     display: flex;
     width: 15%;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
   }
 
   .Adjust{
@@ -350,8 +346,7 @@
   .Nav-items{
     display: flex;
     width: 15%;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
   }
 
   .Adjust{

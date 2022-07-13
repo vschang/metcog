@@ -52,6 +52,13 @@
 }
 
 @media (min-width: 769px) and (max-width: 1199px) {
+  .Wrapper-2{
+    display:flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    justify-content: space-around;
+  }
   .Full-height-2{
     height: 91vh;
   }
@@ -65,14 +72,9 @@
   .Secondary-color-circle-2{
     height: 180px;
     width: 360px;
-    justify-self: center;
     padding-top: 180px;
-    margin-top: 0px;
     background-color: #6DE5BB;
     border-radius: 360px;
-    display: block;
-    margin-left: 80px;
-    grid-column-start: 4;
   }
   .Secondary-random-button-2 {
     color: #6DE5BB;
@@ -84,13 +86,18 @@
     font-size: 0.9rem;
     font-family: 'Merriweather', serif;
     font-weight: 300;
-    margin-top: 30px;
-    grid-column-start: 4;
-    margin-left: 175px;
+    margin-top: 20px;
 }
 }
 
 @media (min-width: 1200px) {
+  .Wrapper-2{
+    display:flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    justify-content: space-around;
+  }
   .Full-height-2{
     height: 91vh;
   }
@@ -100,14 +107,10 @@
   .Secondary-color-circle-2{
     height: 180px;
     width: 360px;
-    justify-self: center;
     padding-top: 180px;
-    margin-top: 0px;
     background-color: #6DE5BB;
     border-radius: 360px;
     display: block;
-    margin-left: -80px;
-    grid-column-start: 5;
   }
 
   .Secondary-random-button-2 {
@@ -120,9 +123,7 @@
     font-size: 0.9rem;
     font-family: 'Merriweather', serif;
     font-weight: 300;
-    margin-top: 30px;
     grid-column-start: 4;
-    margin-left: 60px;
   }
 }
 

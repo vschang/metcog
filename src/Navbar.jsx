@@ -20,7 +20,11 @@ function Navbar() {
         <div className={`Nav-items ${navBarOpen ? "Show-menu" : ""}`} >
           <button className="X-button" onClick={handleToggle}>{navBarOpen ? <i className="fa-solid fa-xmark" ></i> : ""}</button>
           {/* <NavLink className="Whybreathe-link" to="/"> */}
-          <NavLink className="Logo Mobile-logo" to="/">MetCog</NavLink>
+          <NavLink className="Logo Mobile-logo" to="/">
+            <button className="Logo-button" onClick={handleToggle}>
+              MetCog
+            </button>
+          </NavLink>
             {/* <a href="/#Benefits-text" className="Why-breathe" onClick={closeMenu}>Why breathe?</a> */}
           {/* </NavLink> */}
           <NavLink className="Shuffle-link" to="/randomize">

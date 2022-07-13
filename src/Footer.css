@@ -79,12 +79,6 @@
   }
 
   .Logo-footer{
-    /* grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end:6; */
-    /* padding-top: 30px;
-    padding-bottom: 45px; */
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -99,9 +93,6 @@
   }
 
   .Resources-footer{
-    /* grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 5; */
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -109,10 +100,6 @@
   }
 
   .Contact-footer{
-    /* grid-column-start: 7;
-    grid-column-end: 9;
-    grid-row-start: 5;
-    grid-row-end:6; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -155,12 +142,6 @@
   }
 
   .Logo-footer{
-    /* grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end:6; */
-    /* padding-top: 30px;
-    padding-bottom: 45px; */
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -175,9 +156,6 @@
   }
 
   .Resources-footer{
-    /* grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 5; */
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -185,10 +163,6 @@
   }
 
   .Contact-footer{
-    /* grid-column-start: 7;
-    grid-column-end: 9;
-    grid-row-start: 5;
-    grid-row-end:6; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
