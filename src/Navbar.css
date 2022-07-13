@@ -7,6 +7,10 @@
     margin-top: 40px;
   }
 
+  a:hover{
+    color: white !important;
+  }
+
   h2{
     color: white;
     font-size: 1.938rem;
@@ -114,7 +118,7 @@
     background: none;
     border:none;
     font-size: 2rem;
-    margin-right: -8px;
+    margin-right: -14px;
   }
 
   .X-button{

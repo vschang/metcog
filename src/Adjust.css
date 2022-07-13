@@ -81,7 +81,7 @@
     font-family: 'Lato', sans-serif;
     font-size:1.25rem;
     text-align: left;
-    margin-left: -14px;
+    margin-left: -18px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 300;
@@ -128,6 +128,9 @@
     padding-right: 25px;
     padding-left: 0px;
   }
+  .Exercise-button:hover{
+    color: #E18A35;
+  }
   .Exercise-container{
     height: 73vh;
     width:75.7vw;
@@ -164,9 +167,7 @@
 }
 
 @media (min-width: 822px) and (max-width: 1000px)  {
-  :hover.Exercise-button{
-    color:#E18A35;
-  }
+
   .selection-div{
     margin-top: 90px;
   }
@@ -204,6 +205,11 @@
     padding-right: 25px;
     padding-left: 0px;
   }
+
+  :hover.Exercise-button{
+    color:#E18A35;
+  }
+
   .Exercise-container{
     height: 75vh;
     width:75.7vw;
@@ -272,6 +278,9 @@
     font-size:1rem;
     padding-right: 25px;
     padding-left: 0px;
+  }
+  :hover.Exercise-button{
+    color:#E18A35;
   }
   .Exercise-container{
     height: 75vh;

@@ -58,7 +58,7 @@
     height: 70vh;
     align-items: center;
     justify-content: space-between;
-
+    padding-top:40px;
   }
   .Full-height-2{
     height: 91vh;
@@ -88,7 +88,11 @@
     font-family: 'Merriweather', serif;
     font-weight: 300;
     margin-top: 20px;
-}
+  }
+
+  :hover.Secondary-random-button-2 {
+    opacity: 75%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -98,6 +102,7 @@
     height: 70vh;
     align-items: center;
     justify-content: space-between;
+    padding-top:40px;
   }
   .Full-height-2{
     height: 91vh;
@@ -125,6 +130,9 @@
     font-family: 'Merriweather', serif;
     font-weight: 300;
     grid-column-start: 4;
+  }
+  :hover.Secondary-random-button-2 {
+    opacity: 75%;
   }
 }
 

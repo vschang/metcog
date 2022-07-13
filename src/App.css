@@ -42,14 +42,9 @@
     text-decoration:none;
   }
 
-  a:hover{
+  /* a:hover{
     color: #E18A35;
-  }
-
-  #Benefits-text{
-    overflow-y: scroll;
-  }
-
+  } */
 
   h1{
     font-size: 3.062rem;
@@ -107,10 +102,6 @@
 
   a:hover{
     color: #E18A35;
-  }
-
-  #Benefits-text{
-    overflow-y: scroll;
   }
 
 
@@ -172,16 +163,6 @@
   a:hover{
     color: #E18A35;
   }
-
-  #Benefits-text{
-    overflow-y: scroll;
-  }
-
-
-  /* .big-p{
-    font-size: 1.25rem;
-  } */
-
 
   h1{
     font-size: 3.062rem;

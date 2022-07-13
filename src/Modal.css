@@ -1,7 +1,8 @@
 .modal-content{
   width: 92vw;
   height: 88vh;
-  background-color: #232323;
+  /* background-color: #232323; /* mobile */
+  /* background-color: #272727; desktop */
   opacity: 100%;
   border-radius: 10px;
   display: flex;
@@ -36,6 +37,9 @@
 
 
 @media (max-width: 768px) {
+  .modal-content{
+    background-color: #232323; /* mobile */
+  }
   .close{
     position: absolute;
     top: 65px;
@@ -52,6 +56,9 @@
 
 /* for ipad air */
 @media (min-width: 769px) and (max-width: 821px){
+  .modal-content{
+    background-color: #232323; /* mobile */
+  }
   .Adjust-exercise-gif{
     width: 90vw;
   }
@@ -68,6 +75,9 @@
 
 
 @media (min-width: 822px) and (max-width: 1200px) {
+  .modal-content{
+    background-color: #272727; /* desktop */
+  }
 
   .Adjust-exercise-gif{
     width:76vw;

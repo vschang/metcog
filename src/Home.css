@@ -83,7 +83,6 @@
     font-size: 1rem;
     font-family: 'Merriweather', serif;
     font-weight: 300;
-
   }
 
   .Adjust-button{
@@ -196,6 +195,7 @@
     font-weight: 300;
     text-decoration:none;
   }
+
 
   a:hover{
     color: #E18A35;
