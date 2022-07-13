@@ -99,6 +99,9 @@
 }
 
 @media (min-width: 1201px) {
+  .modal-content{
+    background-color: #272727; /* desktop */
+  }
   .Adjust-exercise-gif{
     width:76vw;
   }
