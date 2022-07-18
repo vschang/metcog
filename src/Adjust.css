@@ -13,16 +13,15 @@
 .ml-5{
   margin-left: 5px;
 }
+.white-arrow{
+  color: white;
+  font-size:1rem;
+}
 
 
 @media (max-width: 768px) {
   .selection-div{
     justify-self: center;
-  }
-
-  .white-arrow{
-    color: white;
-    font-size:1rem;
   }
 
   p{
@@ -107,6 +106,10 @@
 }
 /* ipad air */
 @media (min-width: 769px) and (max-width: 821px)  {
+  .white-arrow{
+    color: white;
+    font-size:1rem;
+  }
 
   .selection-div{
     margin-top: 90px;
@@ -202,6 +205,10 @@
     font-family: 'Lato', sans-serif;
   }
 
+  :hover.Random-button{
+    opacity: 75%
+  }
+
   .Bottom-border-flex{
     border-bottom: 0.75px solid white;
     display: flex;
@@ -215,6 +222,7 @@
 }
 
 @media (min-width: 822px) and (max-width: 1000px)  {
+
 
   .selection-div{
     margin-top: 56px;
@@ -315,6 +323,9 @@
     font-size: 1rem;
     font-family: 'Lato', sans-serif;
   }
+  :hover.Random-button{
+    opacity: 75%
+  }
 
   .Bottom-border-flex{
     border-bottom: 0.75px solid white;
@@ -373,6 +384,9 @@
     border-radius: 16px;
     font-size: 1rem;
     font-family: 'Lato', sans-serif;
+  }
+  :hover.Random-button{
+    opacity: 75%
   }
 
   .Bottom-border-flex{

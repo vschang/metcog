@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Adjust.css'
 import Modal from './Modal.jsx'
+import { Icon } from '@iconify/react';
+
 
 const exerciseArray = [
   {id: 1, imgUrl: "https://i.imgur.com/QGhB4u8.mp4", alt:'2x breathing exercise' },
@@ -85,21 +87,21 @@ return(
           <p className="button-text">Perfect Breath</p>
           <div className="Bottom-border-flex">
             <p className="mt-4">5.5 sec inhale x 5.5 sec inhale</p>
-            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+            <Icon className="white-arrow" icon="gg:arrow-long-right" />
           </div>
         </button>
         <button className="Exercise-button" onClick={()=>{chooseExercise(0); displayExercise()}}>
           <p className="button-text">2x Breath</p>
           <div className="Bottom-border-flex">
             <p className="mt-4">Doubling your exhale</p>
-            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+            <Icon className="white-arrow" icon="gg:arrow-long-right" />
           </div>
         </button>
         <button className="Exercise-button" onClick={()=>{chooseExercise(1); displayExercise()}}>
           <p className="button-text">Relax</p>
           <div className="Bottom-border-flex">
             <p className="mt-4">3 sec inhale 6 sec inhale</p>
-            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+            <Icon className="white-arrow" icon="gg:arrow-long-right" />
           </div>
         </button>
         <button className="Exercise-button" onClick={()=>{chooseExercise(2); displayExercise()}}>
@@ -109,7 +111,7 @@ return(
               <p className="mt-4 margin-b-0">4 sec inhale x 7 sec hold</p>
               <p className="margin-t-0">x 8 sec hold</p>
             </div>
-            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+            <Icon className="white-arrow" icon="gg:arrow-long-right" />
           </div>
         </button>
         <button className="Exercise-button" onClick={()=>{chooseExercise(4); displayExercise()} }>
@@ -119,7 +121,7 @@ return(
               <p className="mt-4 margin-b-0">4 sec inhale x 4 sec hold</p>
               <p className="margin-t-0">x 4 sec exhale x 4 sec hold</p>
             </div>
-            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+            <Icon className="white-arrow" icon="gg:arrow-long-right" />
           </div>
         </button>
       </div>
@@ -131,21 +133,21 @@ return(
           <p className="button-text">Perfect Breath</p>
           <div className="Bottom-border-flex">
             <p>5.5 sec inhale x 5.5 sec inhale</p>
-            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+            <Icon className="white-arrow" icon="gg:arrow-long-right" />
           </div>
         </button>
         <button className="Exercise-button" onClick={()=>{chooseExercise(6); displayExercise()}}>
         <p className="button-text">2x Breath</p>
           <div className="Bottom-border-flex">
             <p>Doubling your exhale</p>
-            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+            <Icon className="white-arrow" icon="gg:arrow-long-right" />
           </div>
         </button>
         <button className="Exercise-button" onClick={()=>{chooseExercise(7); displayExercise()}}>
         <p className="button-text">Relax</p>
           <div className="Bottom-border-flex">
             <p>3 sec inhale 6 sec inhale</p>
-            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+            <Icon className="white-arrow" icon="gg:arrow-long-right" />
           </div>
         </button>
         <button className="Exercise-button" onClick={()=>{chooseExercise(8); displayExercise()}}>
@@ -155,7 +157,7 @@ return(
               <p className="margin-b-0">4 sec inhale x 7 sec hold</p>
               <p className="margin-t-0">x 8 sec hold</p>
             </div>
-            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+            <Icon className="white-arrow" icon="gg:arrow-long-right" />
           </div>
         </button>
         <button className="Exercise-button" onClick={()=>{chooseExercise(9); displayExercise()}}>
@@ -165,7 +167,7 @@ return(
               <p className="margin-b-0">4 sec inhale x 4 sec hold</p>
               <p className="margin-t-0">x 4 sec exhale x 4 sec hold</p>
             </div>
-            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+            <Icon className="white-arrow" icon="gg:arrow-long-right" />
           </div>
         </button>
         <button className="Random-button" onClick={()=>{changeExerciseMobile(); displayExercise()}}>Randomize</button>

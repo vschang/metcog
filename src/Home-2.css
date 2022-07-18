@@ -129,6 +129,9 @@
     text-decoration: underline solid #ffffff89;
     margin-left: 20px;
   }
+  :hover.Secondary-choose-desktop{
+    opacity: 75%;
+  }
 
 }
 
@@ -181,6 +184,9 @@
     font-family: 'Lato', sans-serif;
     text-decoration: underline solid #ffffff89;
     margin-left: 30px;
+  }
+  :hover.Secondary-choose-desktop{
+    opacity: 75%;
   }
 }
 
