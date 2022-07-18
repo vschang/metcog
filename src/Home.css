@@ -26,14 +26,15 @@
   }
 
   h1{
-    font-size: 1.938rem;
-    font-family: 'Lato', sans-serif;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    font-size: 1.5625rem;
+    font-family: 'Merriweather', serif;
+    text-align: left;
   }
 
   .big-p{
-    display:none;
+   font-size: 1rem;
+    text-align: left;
+    margin-top: 8px;
   }
 
   .Call-action{
@@ -74,42 +75,40 @@
   }
 
   .Random-button{
-    color: #6DE5BB;
-    background-color: #232323;
+    color: #232323;
+    background-color: #6DE5BB;
     border: solid 1px #6DE5BB;
-    width: 275px;
-    height: 48px;
-    border-radius: 8px;
+    width: 298px;
+    height: 43px;
+    border-radius: 16px;
     font-size: 1rem;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
+    font-family: 'Lato', sans-serif;
   }
 
   .Adjust-button{
-    color: white;
+    color: #ffffff89;
     background-color: #232323;
-    border: solid 1px white;
+    border: solid 1px #232323;
     margin-top :15px;
-    width: 275px;
-    height: 48px;
+    width: 298px;
+    height: 43px;
     border-radius: 8px;
     border-radius: 8px;
     font-size: 1rem;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
+    font-family: 'Lato', sans-serif;
   }
 
   .list-p{
     margin-top: 5px;
     padding-bottom: 18px;
   }
-
+/*
   .Secondary-random-button{
     color: #6DE5BB;
     background-color: #232323;
     border: solid 1px #6DE5BB;
-    width: 288px;
-    height: 48px;
+    width: 298px;
+    height: 43px;
     border-radius: 8px;
     font-size: 1rem;
     font-family: 'Merriweather', serif;
@@ -120,7 +119,7 @@
     grid-row-end: 4;
     justify-self: center;
     margin-top: 40px;
-  }
+  } */
 
   .Secondary-color-circle{
     width: 270px;
@@ -143,16 +142,6 @@
     transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1.0);
   }
 
-  .Fake-shuffle-btn{
-    position: absolute;
-    top: 70px;
-    right: 160px;
-    left: 160px;
-  }
-
-  .Fake-shuffle-btn{
-    display: none;
-  }
   .stop-button{
     color: rgb(160, 160, 160);
     font-weight: 300;
@@ -249,15 +238,14 @@
   }
 
   .Random-button{
-    color: #6DE5BB;
-    background-color: #232323;
+    color: #232323;
+    background-color: #6DE5BB;
     border: solid 1px #6DE5BB;
-    width: 192px;
-    height: 48px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
+    width: 170px;
+    height: 40px;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
   }
 
   .Random-button:hover{
@@ -269,16 +257,17 @@
   }
 
   .Adjust-button{
-    color: white;
+    color: #ffffff89;
     background-color: #232323;
-    border: solid 1px white;
-    width: 192px;
-    height: 48px;
+    border: solid 1px #232323;
+    margin-top :15px;
+    width: 170px;
+    height: 40px;
     border-radius: 8px;
-    font-size: 0.9rem;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline 0.08rem;
   }
   .Exercise-gif{
     margin-left: -3vw;
@@ -308,18 +297,14 @@
   }
 
   .Secondary-random-button{
-    color: #6DE5BB;
-    background-color: #232323;
+    color: #232323;
+    background-color: #6DE5BB;
     border: solid 1px #6DE5BB;
-    width: 192px;
-    height: 48px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    margin-top: 80px;
-    grid-column-start: 4;
-    margin-left: 175px;
+    width: 170px;
+    height: 40px;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
   }
 
   .Secondary-color-circle{
@@ -457,15 +442,14 @@
 
 
   .Random-button{
-    color: #6DE5BB;
-    background-color: #232323;
+    color: #232323;
+    background-color: #6DE5BB;
     border: solid 1px #6DE5BB;
-    width: 192px;
-    height: 48px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
+    width: 170px;
+    height: 40px;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
   }
 
   .Random-button:hover{
@@ -477,19 +461,18 @@
   }
 
   .Adjust-button{
-    color: white;
+    color: #ffffff89;
     background-color: #232323;
-    border: solid 1px white;
-    width: 192px;
-    height: 48px;
+    border: solid 1px #232323;
+    width: 170px;
+    height: 40px;
     border-radius: 8px;
-    font-size: 0.9rem;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    margin-left: 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline 0.08rem;
+    margin-left: 24px;
   }
-
-
 
   .list-p{
     margin-top: 5px;
@@ -506,26 +489,20 @@
     margin: 0px;
   }
 
-
-
   .Secondary-hero{
     grid-column-start: 4;
     padding-top: 10px;
   }
 
   .Secondary-random-button{
-    color: #6DE5BB;
-    background-color: #232323;
+    color: #232323;
+    background-color: #6DE5BB;
     border: solid 1px #6DE5BB;
-    width: 192px;
-    height: 48px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    margin-top: 80px;
-    grid-column-start: 4;
-    margin-left: 175px;
+    width: 170px;
+    height: 40px;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
   }
 
   .Secondary-color-circle{
@@ -541,14 +518,6 @@
     grid-column-start: 4;
   }
 
-  .Fake-shuffle-btn{
-    position: absolute;
-    top: 52px;
-    right: 68px;
-    background: none;
-    border: none;
-    color: white;
-  }
   .stop-button{
     color: rgb(160, 160, 160);
     font-weight: 300;
@@ -597,10 +566,6 @@
     color: #E18A35;
   }
 
-  #Benefits-text{
-    overflow-y: scroll;
-  }
-
   .Wrapper {
     display:grid;
     grid-template-columns: repeat(8, 120px);
@@ -626,7 +591,6 @@
   .big-p{
     font-size: 1.25rem;
   }
-
 
   .Color-circle{
     height: 180px;
@@ -656,15 +620,14 @@
   }
 
   .Random-button{
-    color: #6DE5BB;
-    background-color: #232323;
+    color: #232323;
+    background-color: #6DE5BB;
     border: solid 1px #6DE5BB;
-    width: 192px;
-    height: 48px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
+    width: 170px;
+    height: 40px;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
   }
 
   .Random-button:hover{
@@ -676,16 +639,17 @@
   }
 
   .Adjust-button{
-    color: white;
+    color: #ffffff89;
     background-color: #232323;
-    border: solid 1px white;
-    width: 192px;
-    height: 48px;
+    border: solid 1px #232323;
+    width: 170px;
+    height: 40px;
     border-radius: 8px;
-    font-size: 0.9rem;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    margin-left: 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline 0.08rem;
+    margin-left: 24px;
   }
 
   .Exercise-gif{
@@ -715,18 +679,14 @@
   }
 
   .Secondary-random-button{
-    color: #6DE5BB;
-    background-color: #232323;
+    color: #232323;
+    background-color: #6DE5BB;
     border: solid 1px #6DE5BB;
-    width: 192px;
-    height: 48px;
-    border-radius: 8px;
+    width: 170px;
+    height: 40px;
+    border-radius: 16px;
     font-size: 1rem;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    margin-top: 80px;
-    grid-column-start: 4;
-    margin-left:55px;
+    font-family: 'Lato', sans-serif;
   }
 
   .Secondary-color-circle{
@@ -742,14 +702,6 @@
     grid-column-start: 5;
   }
 
-  .Fake-shuffle-btn{
-    position: absolute;
-    top: 52px;
-    right: 160px;
-    background: none;
-    border: none;
-    color: white;
-  }
   .stop-button{
     color: rgb(160, 160, 160);
     font-weight: 300;

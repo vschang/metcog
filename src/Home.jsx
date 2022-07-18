@@ -74,7 +74,7 @@ export const Home = () => {
             <h1>
               Find <em>balance</em> at work
             </h1>
-            <p className="big-p">Give your brain a rest. Sneak a randomized 1-3 minute breathing exercise between tasks.
+            <p className="big-p">Give your brain a rest. Practice a random < br /> 1-3 minute breathing exercise.
             {/* <em>More time?</em> <br></br> Adjust your preferences as well. */}
             </p>
           </div>
@@ -82,18 +82,18 @@ export const Home = () => {
           <div className='Color-circle' id="rainbow-circle"></div>
 
           <div className="Button-container-desktop">
-            <button onClick={() => {changeExercise(); displayExercise()}} className="Random-button" >Randomize</button>
+            <button onClick={() => {changeExercise(); displayExercise()}} className="Random-button" >Breathe now</button>
             <Link to="/adjust">
-            <button className="Adjust-button">Choose</button>
+            <button className="Adjust-button">Choose your exercise</button>
             </Link>
           </div>
 
           <Modal onClose={() => {setShowModal(false); setShowGif(false)}} show={showModal} alt={exerciseArray[index].alt} src={exerciseArray[index].imgUrl}/>
 
           <div className="Button-container-mobile">
-            <button onClick={() => {changeExerciseMobile(); displayExercise()}} className="Random-button" >Randomize</button>
+            <button onClick={() => {changeExerciseMobile(); displayExercise()}} className="Random-button" >Breathe now</button>
             <Link to="/adjust">
-            <button className="Adjust-button">Choose</button>
+            <button className="Adjust-button">Choose your exercise</button>
             </Link>
           </div>
 

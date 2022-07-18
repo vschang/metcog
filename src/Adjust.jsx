@@ -24,6 +24,16 @@ const Adjust = () => {
     document.getElementById("Exercise-vid").setAttribute("alt", exerciseArray[index].alt);
   }
 
+  function changeExercise(){
+    let newIndex = Math.floor(Math.random()*5)
+    setIndex(newIndex)
+  }
+
+  function changeExerciseMobile(){
+    let newIndex = Math.floor(Math.random()*5) + 5
+    setIndex(newIndex)
+  }
+
   const [showGif, setShowGif] = useState(true) // eslint-disable-line
 
   const [showModal, setShowModal] = useState(false)
@@ -64,74 +74,107 @@ const Adjust = () => {
 return(
   <div className="Adjust-container">
     <div className="selection-div">
-      <h3 className="margin-t-0">Choose your exercise</h3>
+      <h3 className="choose-exercise">Choose your exercise</h3>
       <p className="mb-0 normal-p">Take the planning out of mindfulness.</p>
       <div className="flex-1">
         <p className="normal-p"><em>Know what you like?</em></p>
         <p className="ml-5 normal-p">Choose your exercise.</p>
       </div>
       <div className="Selection-buttons-desktop">
-      <button className="Exercise-button" onClick={()=>{chooseExercise(4); displayExercise()} }>Box breath</button>
-        <button className="Exercise-button" onClick={()=>{chooseExercise(1); displayExercise()}}>Relax</button>
-        <button className="Exercise-button" onClick={()=>{chooseExercise(3); displayExercise()}}>Perfect Breath</button>
-        <button className="Exercise-button" onClick={()=>{chooseExercise(0); displayExercise()}}>2x breath</button>
-        <button className="Exercise-button" onClick={()=>{chooseExercise(2); displayExercise()}}>4-7-8</button>
-        {/* <button className="Exercise-button" onClick={()=>{changeExercise(); displayExercise(); setShow(true)}}><i className="fa-solid fa-shuffle fa-lg Shuffle"></i></button> */}
+        <button className="Exercise-button" onClick={()=>{chooseExercise(3); displayExercise()}}>
+          <p className="button-text">Perfect Breath</p>
+          <div className="Bottom-border-flex">
+            <p className="mt-4">5.5 sec inhale x 5.5 sec inhale</p>
+            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+          </div>
+        </button>
+        <button className="Exercise-button" onClick={()=>{chooseExercise(0); displayExercise()}}>
+          <p className="button-text">2x Breath</p>
+          <div className="Bottom-border-flex">
+            <p className="mt-4">Doubling your exhale</p>
+            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+          </div>
+        </button>
+        <button className="Exercise-button" onClick={()=>{chooseExercise(1); displayExercise()}}>
+          <p className="button-text">Relax</p>
+          <div className="Bottom-border-flex">
+            <p className="mt-4">3 sec inhale 6 sec inhale</p>
+            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+          </div>
+        </button>
+        <button className="Exercise-button" onClick={()=>{chooseExercise(2); displayExercise()}}>
+          <p className="button-text">4-7-8</p>
+          <div className="Bottom-border-flex">
+            <div>
+              <p className="mt-4 margin-b-0">4 sec inhale x 7 sec hold</p>
+              <p className="margin-t-0">x 8 sec hold</p>
+            </div>
+            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+          </div>
+        </button>
+        <button className="Exercise-button" onClick={()=>{chooseExercise(4); displayExercise()} }>
+          <p className="button-text">Box Breath</p>
+          <div className="Bottom-border-flex">
+            <div>
+              <p className="mt-4 margin-b-0">4 sec inhale x 4 sec hold</p>
+              <p className="margin-t-0">x 4 sec exhale x 4 sec hold</p>
+            </div>
+            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
+          </div>
+        </button>
       </div>
 
       <Modal onClose={() => {setShowGif(false); setShowModal(false)}} show={showModal} alt={exerciseArray[index].alt} src={exerciseArray[index].imgUrl}/>
 
       <div className="Selection-buttons-mobile">
-        <button className="Exercise-button" onClick={()=>{chooseExercise(5); displayExercise()}}>          Perfect Breath
+        <button className="Exercise-button" onClick={()=>{chooseExercise(5); displayExercise()}}>
+          <p className="button-text">Perfect Breath</p>
           <div className="Bottom-border-flex">
             <p>5.5 sec inhale x 5.5 sec inhale</p>
-            <p><i className="fa-solid fa-arrow-right-long white-arrow"></i></p>
+            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
           </div>
         </button>
-        <button className="Exercise-button" onClick={()=>{chooseExercise(6); displayExercise()}}>          2x Breath
+        <button className="Exercise-button" onClick={()=>{chooseExercise(6); displayExercise()}}>
+        <p className="button-text">2x Breath</p>
           <div className="Bottom-border-flex">
             <p>Doubling your exhale</p>
-            <p><i className="fa-solid fa-arrow-right-long white-arrow"></i></p>
+            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
           </div>
         </button>
         <button className="Exercise-button" onClick={()=>{chooseExercise(7); displayExercise()}}>
-          Relax
+        <p className="button-text">Relax</p>
           <div className="Bottom-border-flex">
             <p>3 sec inhale 6 sec inhale</p>
-            <p><i className="fa-solid fa-arrow-right-long white-arrow"></i></p>
+            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
           </div>
         </button>
         <button className="Exercise-button" onClick={()=>{chooseExercise(8); displayExercise()}}>
-          4-7-8
+          <p className="button-text">4-7-8</p>
           <div className="Bottom-border-flex">
             <div>
               <p className="margin-b-0">4 sec inhale x 7 sec hold</p>
               <p className="margin-t-0">x 8 sec hold</p>
             </div>
-            <p><i className="fa-solid fa-arrow-right-long white-arrow"></i></p>
+            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
           </div>
         </button>
         <button className="Exercise-button" onClick={()=>{chooseExercise(9); displayExercise()}}>
-          Box Breath
+          <p className="button-text">Box Breath</p>
           <div className="Bottom-border-flex">
             <div>
               <p className="margin-b-0">4 sec inhale x 4 sec hold</p>
               <p className="margin-t-0">x 4 sec exhale x 4 sec hold</p>
             </div>
-            <p><i className="fa-solid fa-arrow-right-long white-arrow"></i></p>
+            <p><span className="iconify white-arrow" data-icon="gg:arrow-long-right"></span></p>
           </div>
         </button>
-        {/* <button className="Exercise-button" onClick={()=>{changeExerciseMobile(); displayExercise()}}><i className="fa-solid fa-shuffle fa-lg Shuffle"></i></button> */}
+        <button className="Random-button" onClick={()=>{changeExerciseMobile(); displayExercise()}}>Randomize</button>
       </div>
     </div>
 
     <div className="Exercise-container">
-    {/* {showGif?
-      <div className="Exercise-gif-container">
-        <img src={exerciseArray[index].imgUrl} className="Exercise-gif " alt={exerciseArray[index].alt} />
-      </div> : */}
       <div className='Color-circle' id="rainbow-circle"></div>
-      {/* } */}
+      <button className="Random-button" onClick={()=>{changeExercise(); displayExercise();}}>Randomize</button>
     </div>
   </div>
 )

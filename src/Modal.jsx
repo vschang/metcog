@@ -1,4 +1,5 @@
 import './Modal.css'
+import { Icon } from '@iconify/react';
 
 const Modal = props => {
 
@@ -9,7 +10,7 @@ const Modal = props => {
           < video id="Exercise-vid" className='Adjust-exercise-gif' width="750" height="500" autoPlay={true} muted playsInline src={props.src} alt={props.alt} type="video/mp4">
           </video>
         </div>
-          <button onClick={props.onClose} className='close'><i className="fa-solid fa-xmark" ></i></button>
+          <button onClick={props.onClose} className='close'><Icon icon="ph:x-light" /></button>
       </div>
     </div>
   );

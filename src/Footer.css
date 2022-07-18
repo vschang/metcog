@@ -1,5 +1,8 @@
 
 @media (max-width: 768px) {
+  h2{
+    font-size:1.5625rem;
+  }
   .Footer{
     display: flex;
     flex-direction: column;
@@ -14,12 +17,15 @@
     flex-direction: column;
     justify-self: center;
     align-self: center;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 
   .Small-p{
-    font-size: 0.8125rem;
+    font-family: 'Lato', sans-serif;
+    color: rgba(255, 255, 255, 0.409);
+    font-size: 0.6875rem;
     font-weight: 300;
+    margin-top:0px;
   }
 
   .Resources-footer{

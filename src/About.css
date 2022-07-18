@@ -1,10 +1,11 @@
 @media (max-width: 768px) {
   .About{
     display:flex;
-    flex-direction:column;
+    flex-direction:column-reverse;
   }
-  .margin-t-0{
+  .choose-exercise{
     margin-top: 0px;
+    margin-bottom: -10px;
   }
 
   .margin-b-0{
@@ -26,10 +27,9 @@
   }
 
   .Health-benefits{
-    width: 75%;
-    align-self: center;
+    width: 90%;
     text-align: left;
-    padding-top:60px;
+    padding-top: 60px;
   }
 
   .list-p{
@@ -41,7 +41,7 @@
     font-family: 'Merriweather', serif;
     font-weight: 300;
     color: white;
-    font-size: 1.563rem;
+    font-size: 1.178rem;
   }
 
   ul {
@@ -50,14 +50,14 @@
 
   li{
     color: white;
-    font-size: 1.25rem;
+    font-size: 0.9425rem;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
   }
 
   ::marker{
     color:#cd44e8;
-    font-size: .75rem;
+    font-size: .5rem;
   }
 
   p{
@@ -91,13 +91,14 @@
     padding-top: 275px;
   }
   .Health-benefits{
-    width: 35%;
+    width: 40%;
     align-self: center;
   }
 
   .list-p{
     margin-top: 5px;
     padding-bottom: 18px;
+    font-size: 0.753rem;
   }
   h3{
     font-family: 'Merriweather', serif;
@@ -157,7 +158,7 @@
   }
 
   .Health-benefits{
-    width: 35%;
+    width: 45%;
     align-self: center;
   }
 
@@ -221,13 +222,12 @@
   }
 
   .Purple-square{
-    width: 710px;
-    height: 605px;
     margin: 0 calc((769px - 100vw)/2);
+    width: 56vw;
   }
 
   .Health-benefits{
-    width: 35%;
+    width: 40%;
     align-self: center;
   }
 
@@ -291,13 +291,12 @@
   }
 
   .Purple-square{
-    width: 710px;
-    height: 605px;
-    margin: 0 calc((1072px - 100vw)/2);
+    width: 54vw;
+    margin: 0 calc((1000px - 100vw)/2);
   }
 
   .Health-benefits{
-    width: 35%;
+    width: 40%;
     align-self: center;
   }
 

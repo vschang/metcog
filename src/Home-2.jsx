@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './Home.css'
 import './Home-2.css'
 import Modal from './Modal.jsx'
+import { Link } from 'react-router-dom';
+
 
 export const SecondHome = () => {
 
@@ -76,8 +78,13 @@ export const SecondHome = () => {
 
           <div className="Secondary-hero Wrapper-2">
             <div className='Secondary-color-circle-2' id="rainbow-circle"></div>
-            <button onClick={() => {changeExercise(); displayExercise()}} className="Secondary-random-button-2" >Randomize</button>
-            <button onClick={() => {changeExerciseMobile(); displayExercise()}} className="Secondary-random-button-mobile" >Randomize</button>
+            <div className="Secondary-buttons-div">
+              <button onClick={() => {changeExercise(); displayExercise()}} className="Secondary-random-button-2" >Randomize</button>
+              <button onClick={() => {changeExerciseMobile(); displayExercise()}} className="Secondary-random-button-mobile" >Randomize</button>
+              <Link to="/adjust">
+              <button className="Secondary-choose-button-mobile Secondary-choose-desktop">Choose your exercise</button>
+              </Link>
+            </div>
           </div>
 
           <Modal onClose={() => {setShowModal(false); setShowGif(false)}} show={showModal} alt={exerciseArray[index].alt} src={exerciseArray[index].imgUrl}/>
