@@ -15,10 +15,10 @@ function About() {
             <p className="list-p">Calm your mind and body with a few breaths.</p>
           </li>
           <li>Improve Overall Health
-            <p className="list-p">Improve circulation, lung capacity and boost your immune system</p>
+            <p className="list-p">Improve circulation, lung capacity and boost your <br /> immune system</p>
           </li>
           <li>Better Stress Perception
-            <p className="list-p">Breathing lowers your resting heart rate and is correlated with less anxiety and stress.</p>
+            <p className="list-p">Breathing lowers your resting heart rate and is <br /> correlated with less anxiety and stress.</p>
           </li>
         </ul>
       </div>

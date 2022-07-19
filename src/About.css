@@ -8,7 +8,7 @@
     margin-bottom: -10px;
     margin-left: -5px;
   }
-  
+
 
   .margin-b-0{
     margin-bottom:0px;
@@ -229,7 +229,6 @@
   }
 
   .Health-benefits{
-    width: 40%;
     align-self: center;
   }
 
@@ -280,9 +279,6 @@
     color: #E18A35;
   }
 
-  #Benefits-text{
-    overflow-y: scroll;
-  }
 }
 
 @media (min-width: 1250px) {
@@ -298,7 +294,6 @@
   }
 
   .Health-benefits{
-    width: 40%;
     align-self: center;
   }
 

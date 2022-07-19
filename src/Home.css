@@ -236,6 +236,7 @@
     background-color: #6DE5BB;
     border-radius: 360px;
     display: block;
+    justify-self:end;
   }
 
   .Random-button{
@@ -427,6 +428,7 @@
     background-color: #6DE5BB;
     border-radius: 360px;
     display: block;
+    justify-self:end;
   }
 
   .Button-container-desktop{
@@ -606,6 +608,8 @@
     background-color: #6DE5BB;
     border-radius: 360px;
     display: block;
+    justify-self:end;
+
   }
 
   .Button-container-desktop{
