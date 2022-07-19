@@ -183,6 +183,7 @@
     margin-top: 0px;
     background-color: #6DE5BB;
     border-radius: 360px;
+    justify-self: end;
   }
   .ml-5{
     margin-left: 0px;
@@ -299,6 +300,7 @@
     margin-top: 0px;
     background-color: #6DE5BB;
     border-radius: 360px;
+    justify-self: end;
   }
   .ml-5{
     margin-left: 0px;
@@ -441,12 +443,12 @@
     grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 4;
-    justify-self: center;
     padding-top: 180px;
     margin-top: 70px;
     background-color: #6DE5BB;
     border-radius: 360px;
     display: block;
+    justify-self: end;
   }
   .mt-4{
     margin-top: 4px;
