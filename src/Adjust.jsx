@@ -109,7 +109,7 @@ return(
           <div className="Bottom-border-flex">
             <div>
               <p className="mt-4 margin-b-0">4 sec inhale x 7 sec hold</p>
-              <p className="margin-t-0">x 8 sec hold</p>
+              <p className="margin-t-0 text-left">x 8 sec hold</p>
             </div>
             <Icon className="white-arrow" icon="gg:arrow-long-right" />
           </div>

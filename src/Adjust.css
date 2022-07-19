@@ -111,20 +111,18 @@
     font-size:1rem;
   }
 
-  .selection-div{
-    margin-top: 90px;
-  }
-
   .Selection-buttons-mobile{
     display: none;
   }
 
   .Adjust-container{
+    height: 88vh;
     width: 80vw;
     padding-top: 50px;
     display:flex;
     flex-direction: row-reverse;
     height: 77vh;
+
   }
 
   .flex-1{
@@ -147,17 +145,19 @@
     padding-right: 25px;
     padding-left: 0px;
   }
-  .Exercise-button:hover{
-    color: #E18A35;
+
+  :hover.Exercise-button{
+    opacity: 75%
   }
+
   .Exercise-container{
     height: 73vh;
     width:75.7vw;
     display: flex;
-    padding-right: 100px;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-right: 56px;
   }
   .mtt-0{
     margin-top:0px;
@@ -184,14 +184,9 @@
   .ml-5{
     margin-left: 0px;
   }
-  .Exercise-button{
-    border:none;
-    background-color:transparent;
-    color: white;
-    font-family: 'Lato', sans-serif;
+
+  .text-left{
     text-align: left;
-    width: 32vw;
-    padding: 0px;
   }
 
   .Random-button{
@@ -213,11 +208,14 @@
     border-bottom: 0.75px solid white;
     display: flex;
     justify-content: space-between;
+    width: 35vw;
   }
   .button-text{
     font-size: 1.25rem;
     font-weight: 300;
     margin-bottom: 0px;
+    margin-top: 10px;
+    text-align: left;
   }
 }
 
@@ -233,6 +231,7 @@
   }
 
   .Adjust-container{
+    height: 88vh;
     width: 80vw;
     padding-top: 0px;
     display:flex;
@@ -258,11 +257,10 @@
     padding-right: 25px;
     padding-left: 0px;
   }
-
-
-  :hover.Exercise-button{
-    color:#E18A35;
+  .Exercise-button:hover{
+    opacity: 75%;
   }
+
 
   .Exercise-container{
     height: 75vh;
@@ -271,10 +269,10 @@
     display: flex;
     padding-right: 100px;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-  }
 
+  }
 
   .mtt-0{
     margin-top:0px;
@@ -312,6 +310,9 @@
     width: 32vw;
     padding: 0px;
   }
+  .Exercise-button:hover{
+    opacity: 75%;
+  }
 
   .Random-button{
     color: #232323;
@@ -336,6 +337,7 @@
     font-size: 1.25rem;
     font-weight: 300;
     margin-bottom: 0px;
+    margin-top: 10px;
   }
 }
 
@@ -357,6 +359,7 @@
   }
 
   .Adjust-container{
+    height: 88vh;
     width: 80vw;
     padding-top: 0px;
     display:flex;
@@ -373,6 +376,10 @@
     text-align: left;
     width: 32vw;
     padding: 0px;
+  }
+
+  .Exercise-button:hover{
+    opacity: 75%;
   }
 
   .Random-button{
@@ -398,17 +405,15 @@
     font-size: 1.25rem;
     font-weight: 300;
     margin-bottom: 0px;
+    margin-top: 10px;
   }
   /*  */
 
-  :hover.Exercise-button{
-    color:#E18A35;
-  }
   .Exercise-container{
     height: 75vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 

@@ -28,6 +28,7 @@
     font-size: 1.5625rem;
     font-weight: 300;
     font-family:'Futura-Medium';
+    margin-left: -10px;
   }
   .Logo-button{
     color: white;
@@ -36,6 +37,7 @@
     font-family:'Futura-Medium';
     background:none;
     border:none;
+    margin-left: 40px;
   }
 
   .Mobile-logo{
@@ -105,7 +107,7 @@
     border:none;
     font-size: 3rem;
     margin-top: -10px;
-    margin-right: -20px;
+    margin-right: -40px;
   }
 
   .X-button{
@@ -120,9 +122,6 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     height: 10vh;
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 5px;
   }
 
