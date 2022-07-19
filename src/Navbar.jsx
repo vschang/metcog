@@ -40,7 +40,7 @@ function Navbar() {
                 </NavLink>
                 <NavLink to="/adjust">
                   <button className="nav-text" onClick={handleToggle} >
-                    Choose your experience
+                    Choose your exercise
                   </button>
                 </NavLink>
               </div>
