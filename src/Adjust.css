@@ -23,6 +23,9 @@
   .selection-div{
     justify-self: center;
   }
+  .ml-neg5{
+    margin-left: -5px;
+  }
 
   p{
     font-size: 0.8125rem;

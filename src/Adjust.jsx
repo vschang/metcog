@@ -77,9 +77,9 @@ return(
   <div className="Adjust-container">
     <div className="selection-div">
       <h3 className="choose-exercise">Choose your exercise</h3>
-      <p className="mb-0 normal-p">Take the planning out of mindfulness.</p>
+      <p className="mb-0 normal-p ml-neg5">Take the planning out of mindfulness.</p>
       <div className="flex-1">
-        <p className="normal-p"><em>Know what you like?</em></p>
+        <p className="normal-p ml-neg5"><em>Know what you like?</em></p>
         <p className="ml-5 normal-p">Choose your exercise.</p>
       </div>
       <div className="Selection-buttons-desktop">

@@ -14,6 +14,7 @@
     justify-content:center;
     height: 85vh;
     transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+    padding-top: 10px;
   }
   .Wrapper-2 {
     display:grid;

@@ -37,7 +37,7 @@
     font-family:'Futura-Medium';
     background:none;
     border:none;
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
   .Mobile-logo{
@@ -96,7 +96,7 @@
 
   .Hamburger-div{
     margin-top: -10px;
-    margin-right: -50px;
+    margin-right: -70px;
   }
 
   .Hamburger-button{
@@ -117,7 +117,8 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     height: 10vh;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-right: -5px;
   }
 
   .nav-buttons{
