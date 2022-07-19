@@ -28,7 +28,7 @@
     font-size: 1.5625rem;
     font-weight: 300;
     font-family:'Futura-Medium';
-    margin-left: -10px;
+    margin-left: -5px;
   }
   .Logo-button{
     color: white;
@@ -95,19 +95,14 @@
   }
 
   .Hamburger-div{
-    display: flex;
-    justify-content: flex-end;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    align-items: flex-start;
+    margin-top: -10px;
+    margin-right: -50px;
   }
 
   .Hamburger-button{
     background: none;
     border:none;
     font-size: 3rem;
-    margin-top: -10px;
-    margin-right: -40px;
   }
 
   .X-button{
